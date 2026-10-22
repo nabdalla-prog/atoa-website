@@ -1,0 +1,15 @@
+{
+  "name": "atoa-project",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "dev": "node build.mjs --watch"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
+    "daisyui": "^5.7.46",
+    "postcss": "^8.5.26",
+    "tailwindcss": "^4.3.3"
+  }
+}

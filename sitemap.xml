@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://atoafulltaxservices.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://atoafulltaxservices.com/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://atoafulltaxservices.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://atoafulltaxservices.com/sw/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://atoafulltaxservices.com/fr/"/>
+  </url>
+  <url>
+    <loc>https://atoafulltaxservices.com/ar/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://atoafulltaxservices.com/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://atoafulltaxservices.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://atoafulltaxservices.com/sw/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://atoafulltaxservices.com/fr/"/>
+  </url>
+  <url>
+    <loc>https://atoafulltaxservices.com/sw/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://atoafulltaxservices.com/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://atoafulltaxservices.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://atoafulltaxservices.com/sw/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://atoafulltaxservices.com/fr/"/>
+  </url>
+  <url>
+    <loc>https://atoafulltaxservices.com/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://atoafulltaxservices.com/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://atoafulltaxservices.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://atoafulltaxservices.com/sw/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://atoafulltaxservices.com/fr/"/>
+  </url>
+</urlset>
