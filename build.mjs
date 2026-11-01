@@ -32,6 +32,11 @@ const esc = s => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(
 const check = '<svg viewBox="0 0 24 24" class="size-4 mt-0.5 shrink-0 text-success" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg>';
 const cross = '<svg viewBox="0 0 24 24" class="size-4 mt-0.5 shrink-0 text-error" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>';
 
+// End-of-section call to action: a short line in the reader's language, then Book (opens the booking popup) and Call
+const ctaRow = (t, text, onNavy = false) => `<div class="cta-row${onNavy ? " cta-navy" : ""}"><p class="cta-q">${text}</p><div class="flex flex-wrap gap-2 shrink-0">` +
+  `<button class="btn ${onNavy ? "btn-accent" : "btn-primary"}" data-book>${t.hero_cta}</button>` +
+  (PHONE ? `<a href="tel:+1${PHONE}" class="btn ${onNavy ? "btn-ghost text-mist border-mist/25 hover:bg-mist/10" : "btn-outline border-base-300 hover:border-primary"}">${t.bk_call}</a>` : "") + `</div></div>`;
+
 // Every page is built once per language; `url` is its address under the language folder
 const PAGES = [
   { src: "src/page.html", file: "index.html", url: "" },
@@ -99,6 +104,8 @@ async function buildPage(page) {
       t_warnings: t.t_warnings.map(i => `<li class="flex gap-3">${cross}<span>${i}</span></li>`).join(""),
       // 404: one card per language, each written in its own language
       nf_cards: Object.entries(LANGS).map(([c, x]) => `<a href="/${x.path}" lang="${c}" dir="${x.dir}" class="nf-card${c === "ar" ? " font-arabic" : ""}"><span class="text-lg font-medium text-base-content">${all[c].nf_title}</span><span class="text-sm text-secondary">${all[c].nf_home} ${x.dir === "rtl" ? "←" : "→"}</span></a>`).join("\n      "),
+      cta_languages: ctaRow(t, t.cta_l, true), cta_about: ctaRow(t, t.cta_a), cta_process: ctaRow(t, t.cta_p), cta_bring: ctaRow(t, t.cta_b),
+      cta_trust: ctaRow(t, t.cta_t), cta_deadlines: ctaRow(t, t.cta_d), cta_faq: ctaRow(t, t.cta_f),
       pv_body: t.pv_sections.map(([h, p]) => `<h2 class="mt-12 text-2xl text-base-content">${h}</h2>\n  <p class="mt-3 text-base-content/75 leading-relaxed">${p}</p>`).join("\n  "),
       faq_items: t.faq_items.map(([q, a], i) => `<details class="collapse collapse-plus rounded-none border-b border-base-300" name="faq"${i ? "" : " open"}>
         <summary class="collapse-title text-lg font-medium px-0">${q}</summary>

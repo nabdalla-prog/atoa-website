@@ -115,6 +115,12 @@
   .logo-bars { fill: #C9D6E3; }
   [data-theme="atoa-night"] .logo-bars { fill: #3A5A7A; }
 
+  /* End-of-section call to action (Book + Call) */
+  .cta-row { @apply mt-12 flex flex-col sm:flex-row sm:items-center justify-between gap-4 rounded-box border border-base-300 bg-base-100 px-5 py-4 sm:px-6; }
+  .cta-q { @apply font-display text-lg font-medium text-base-content; }
+  .cta-navy { @apply border-mist/20 bg-mist/5; }
+  .cta-navy .cta-q { @apply text-mist; }
+
   /* 404 page: one card per language */
   .nf-card { @apply flex flex-col gap-1 rounded-box border border-base-300 bg-base-100 p-5 text-start transition-colors hover:border-primary; }
 
