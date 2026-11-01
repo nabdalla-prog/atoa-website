@@ -115,6 +115,9 @@
   .logo-bars { fill: #C9D6E3; }
   [data-theme="atoa-night"] .logo-bars { fill: #3A5A7A; }
 
+  /* 404 page: one card per language */
+  .nf-card { @apply flex flex-col gap-1 rounded-box border border-base-300 bg-base-100 p-5 text-start transition-colors hover:border-primary; }
+
   /* Orange swoosh under the key word of a headline (echoes the logo arrow) */
   h1 em, h2 em, .swoosh {
     font-style: normal; position: relative; white-space: nowrap; color: var(--color-primary);

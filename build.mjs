@@ -36,6 +36,8 @@ const cross = '<svg viewBox="0 0 24 24" class="size-4 mt-0.5 shrink-0 text-error
 const PAGES = [
   { src: "src/page.html", file: "index.html", url: "" },
   { src: "src/privacy.html", file: "privacy.html", url: "privacy.html", meta: ["pv_meta_title", "pv_meta_description"] },
+  // GitHub Pages shows /404.html for any missing address, at any depth: one page for all languages, with links from the site root
+  { src: "src/404.html", file: "404.html", url: "404.html", meta: ["nf_meta_title", "meta_description"], only: "en", root: "/" },
 ];
 
 function langSwitch(cur, root, cls, file = "index.html") {
@@ -52,21 +54,24 @@ const withPartials = async tpl => {
 };
 
 async function buildPages() {
-  for (const page of PAGES) await buildPage(page);
-  console.log(`built ${PAGES.length * Object.keys(LANGS).length} pages`);
+  let n = 0;
+  for (const page of PAGES) n += await buildPage(page);
+  console.log(`built ${n} pages`);
 }
 
 async function buildPage(page) {
   const tpl = await withPartials(await readFile(page.src, "utf8"));
-  for (const [code, l] of Object.entries(LANGS)) {
-    const t = JSON.parse(await readFile(`src/i18n/${code}.json`, "utf8"));
-    const root = l.path ? "../" : "";
+  const all = Object.fromEntries(await Promise.all(Object.keys(LANGS).map(async c => [c, JSON.parse(await readFile(`src/i18n/${c}.json`, "utf8"))])));
+  const langs = Object.entries(LANGS).filter(([code]) => !page.only || code === page.only);
+  for (const [code, l] of langs) {
+    const t = all[code];
+    const root = page.root ?? (l.path ? "../" : "");
     const fmt = new Intl.DateTimeFormat(l.locale, { month: "short", day: "numeric", timeZone: "UTC" });
     const vars = {
       ...t,
       lang: code, dir: l.dir, root, fonts: FONTS, og_locale: l.og,
-      canonical: SITE + l.path + page.url, home: page.url ? "./" : "#top", og_image: SITE + "og.jpg?v=2", // bump v when og.jpg changes, so WhatsApp/Facebook refresh their cached preview
-      alternates: [...Object.entries(LANGS).map(([c, x]) => `<link rel="alternate" hreflang="${c}" href="${SITE + x.path + page.url}">`),
+      canonical: SITE + l.path + page.url, home: page.root ?? (page.url ? "./" : "#top"), here: page.root ?? "", og_image: SITE + "og.jpg?v=2", // bump v when og.jpg changes, so WhatsApp/Facebook refresh their cached preview
+      alternates: page.only ? "" : [...Object.entries(LANGS).map(([c, x]) => `<link rel="alternate" hreflang="${c}" href="${SITE + x.path + page.url}">`),
         `<link rel="alternate" hreflang="x-default" href="${SITE + page.url}">`].join("\n"),
       jsonld: JSON.stringify({
         "@context": "https://schema.org", "@type": "AccountingService", name: "AtoA", url: SITE + l.path,
@@ -76,7 +81,7 @@ async function buildPage(page) {
         areaServed: { "@type": "Country", name: "United States" },
       }),
       logo_mark: logoMark,
-      lang_switch: langSwitch(code, root, "lang-link", page.file),
+      lang_switch: langSwitch(code, root, "lang-link", page.only ? "index.html" : page.file),
       whatsapp: `${WHATSAPP}?text=${encodeURIComponent(t.wa_text)}`,
       whatsapp_base: WHATSAPP,
       phone: PHONE, email: EMAIL,
@@ -89,6 +94,8 @@ async function buildPage(page) {
         t[k].map(i => `<li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>${i}</span></label></li>`).join("")])),
       t_promises: t.t_promises.map(i => `<li class="flex gap-3">${check}<span>${i}</span></li>`).join(""),
       t_warnings: t.t_warnings.map(i => `<li class="flex gap-3">${cross}<span>${i}</span></li>`).join(""),
+      // 404: one card per language, each written in its own language
+      nf_cards: Object.entries(LANGS).map(([c, x]) => `<a href="/${x.path}" lang="${c}" dir="${x.dir}" class="nf-card${c === "ar" ? " font-arabic" : ""}"><span class="text-lg font-medium text-base-content">${all[c].nf_title}</span><span class="text-sm text-secondary">${all[c].nf_home} ${x.dir === "rtl" ? "←" : "→"}</span></a>`).join("\n      "),
       pv_body: t.pv_sections.map(([h, p]) => `<h2 class="mt-12 text-2xl text-base-content">${h}</h2>\n  <p class="mt-3 text-base-content/75 leading-relaxed">${p}</p>`).join("\n  "),
       faq_items: t.faq_items.map(([q, a], i) => `<details class="collapse collapse-plus rounded-none border-b border-base-300" name="faq"${i ? "" : " open"}>
         <summary class="collapse-title text-lg font-medium px-0">${q}</summary>
@@ -107,6 +114,7 @@ async function buildPage(page) {
     await mkdir(l.path || ".", { recursive: true });
     await writeFile(l.path + page.file, html);
   }
+  return langs.length;
 }
 
 async function buildCss() {
@@ -120,7 +128,7 @@ async function buildCss() {
 async function buildHostingFiles() {
   await writeFile("CNAME", new URL(SITE).hostname + "\n");
   await writeFile("robots.txt", `User-agent: *\nAllow: /\n\nSitemap: ${SITE}sitemap.xml\n`);
-  const urls = PAGES.flatMap(page => {
+  const urls = PAGES.filter(page => !page.only).flatMap(page => {
     const alts = Object.entries(LANGS).map(([c, x]) => `    <xhtml:link rel="alternate" hreflang="${c}" href="${SITE + x.path + page.url}"/>`).join("\n");
     return Object.values(LANGS).map(l => `  <url>\n    <loc>${SITE + l.path + page.url}</loc>\n${alts}\n  </url>`);
   }).join("\n");
