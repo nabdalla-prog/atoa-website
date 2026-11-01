@@ -52,7 +52,7 @@
   "svc3_t": "Travailleurs indépendants et plateformes",
   "svc3_b": "Chauffeurs VTC et livreurs, routiers, garde d'enfants à domicile, ménage, coiffure et beauté. Nous comptons vos kilomètres et vos dépenses pour que vous payiez l'impôt sur votre bénéfice, pas sur tout ce que l'application déclare.",
   "svc4_t": "Demandes d'ITIN",
-  "svc4_b": "Aide pour le formulaire W‑7 pour un conjoint ou des enfants qui ne peuvent pas obtenir de numéro de sécurité sociale, envoyé avec votre déclaration.",
+  "svc4_b": "Aide pour le formulaire W‑7 pour un conjoint ou des enfants qui ne peuvent pas obtenir de numéro de sécurité sociale, envoyé avec votre déclaration. Nous vous expliquons comment envoyer vos pièces d'identité à l'IRS (originaux ou copies certifiées par l'organisme émetteur) ou où les faire vérifier en personne.",
   "svc5_t": "Années passées et corrections",
   "svc5_b": "Pas déclaré l'an dernier, ou une erreur à corriger ? Nous préparons les déclarations en retard et rectificatives et vous aidons à vous remettre à jour.",
   "svc6_t": "Courriers de l'IRS et de l'État",
@@ -117,7 +117,7 @@
   "faq_items": [
     ["Faut‑il parler anglais ?", "Non. Tout le rendez‑vous peut se faire en français, arabe, swahili ou anglais. Les formulaires sont en anglais, comme l'exige l'IRS, mais nous vous expliquons chaque ligne dans votre langue."],
     ["J'habite en Illinois et je travaille en Iowa. Dois‑je faire deux déclarations d'État ?", "En général, une seule. L'Iowa et l'Illinois ont un accord qui impose les salaires uniquement dans l'État où vous habitez. Si le mauvais État a retenu de l'impôt sur votre salaire, nous faisons le nécessaire pour le récupérer et vous montrons comment corriger cela avec votre employeur."],
-    ["Mon conjoint ou mon enfant n'a pas de numéro de sécurité sociale.", "Il peut peut‑être obtenir un ITIN, un numéro fiscal délivré par l'IRS. Nous vous aidons avec la demande (formulaire W‑7) et l'envoyons avec votre déclaration."],
+    ["Mon conjoint ou mon enfant n'a pas de numéro de sécurité sociale.", "Il peut peut‑être obtenir un ITIN, un numéro fiscal délivré par l'IRS. Nous vous aidons avec la demande (formulaire W‑7) et l'envoyons avec votre déclaration. Nous vous expliquons comment envoyer vos pièces d'identité à l'IRS (originaux ou copies certifiées par l'organisme émetteur) ou où les faire vérifier en personne."],
     ["Je conduis pour Uber, Lyft ou DoorDash. De quoi ai‑je besoin ?", "Le récapitulatif annuel de chaque application et un relevé des kilomètres parcourus pour le travail. Le kilométrage réduit souvent beaucoup l'impôt, donc même un relevé approximatif aide."],
     ["Combien ça coûte ?", "Cela dépend de votre déclaration, alors nous vous donnons le prix avant de commencer. Ce n'est jamais un pourcentage de votre remboursement."],
     ["Quand vais‑je recevoir mon remboursement ?", "Selon l'IRS, la plupart des déclarations électroniques avec dépôt direct sont remboursées en 21 jours. Par la loi, les remboursements qui incluent l'EITC ou le crédit additionnel pour enfants ne peuvent pas être versés avant la mi‑février."],
@@ -127,7 +127,7 @@
   "c_eyebrow": "Prenez rendez‑vous",
   "c_title": "Asseyez‑vous avec quelqu'un qui parle votre langue.",
   "c_area": "Au service des familles des deux côtés du fleuve :",
-  "c_hours": "Sur rendez‑vous · soirs et samedis pendant la saison des impôts",
+  "c_hours": "Saison des impôts (de mi‑janvier au 15 avril) : du lundi au vendredi, 9 h – 17 h · Le reste de l'année : sur rendez‑vous",
 
   "footer_tag": "Préparation d'impôts en français, arabe, swahili et anglais pour les Quad Cities.",
   "footer_irs": "Sans lien avec l'IRS ni aucune administration fiscale d'État.",

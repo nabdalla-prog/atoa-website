@@ -9,7 +9,11 @@ import tailwind from "@tailwindcss/postcss";
 
 // ===== Settings: replace these before launch =====
 const SITE = "https://atoafulltaxservices.com/";
-const WHATSAPP = "https://wa.me/10000000000"; // TODO: real WhatsApp number, digits only after wa.me/
+const PHONE = "3097218006"; // 10 digits, used for both the phone line and WhatsApp
+const EMAIL = "kakoziodile@gmail.com";
+const ADDRESS = { street: "823 20th St", city: "Rock Island", region: "IL", zip: "61201" };
+const WHATSAPP = `https://wa.me/1${PHONE || "0000000000"}`;
+const PHONE_SHOWN = PHONE ? `(${PHONE.slice(0, 3)}) ${PHONE.slice(3, 6)}‑${PHONE.slice(6)}` : "";
 
 const LATIN_FONTS = "family=IBM+Plex+Mono:wght@400;500&family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@500;600;700";
 const ARABIC_FONTS = "family=Cairo:wght@600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600";
@@ -42,17 +46,22 @@ async function buildPages() {
     const vars = {
       ...t,
       lang: code, dir: l.dir, root, fonts: FONTS, og_locale: l.og,
-      canonical: SITE + l.path,
+      canonical: SITE + l.path, og_image: SITE + "og.jpg",
       alternates: [...Object.entries(LANGS).map(([c, x]) => `<link rel="alternate" hreflang="${c}" href="${SITE + x.path}">`),
         `<link rel="alternate" hreflang="x-default" href="${SITE}">`].join("\n"),
       jsonld: JSON.stringify({
         "@context": "https://schema.org", "@type": "AccountingService", name: "AtoA", url: SITE + l.path,
         description: t.meta_description, knowsLanguage: ["en", "ar", "sw", "fr"],
+        ...(PHONE && { telephone: "+1" + PHONE }), email: EMAIL,
+        address: { "@type": "PostalAddress", streetAddress: ADDRESS.street, addressLocality: ADDRESS.city, addressRegion: ADDRESS.region, postalCode: ADDRESS.zip, addressCountry: "US" },
         areaServed: ["Davenport, IA", "Bettendorf, IA", "Moline, IL", "Rock Island, IL", "East Moline, IL"].map(name => ({ "@type": "City", name })),
       }),
       lang_switch: langSwitch(code, root, "lang-link"),
       whatsapp: `${WHATSAPP}?text=${encodeURIComponent(t.wa_text)}`,
       whatsapp_base: WHATSAPP,
+      contact_line: [PHONE && `<a href="tel:+1${PHONE}" class="link-quiet">${PHONE_SHOWN}</a>`, `<a href="mailto:${EMAIL}" class="link-quiet">${EMAIL}</a>`].filter(Boolean).join(" · "),
+      address: `${ADDRESS.street}, ${ADDRESS.city}, ${ADDRESS.region} ${ADDRESS.zip}`,
+      map_url: "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(`${ADDRESS.street}, ${ADDRESS.city}, ${ADDRESS.region} ${ADDRESS.zip}`),
       chk_en: "", chk_ar: "", chk_sw: "", chk_fr: "", [`chk_${code}`]: "checked",
       js: JSON.stringify(t.js),
       ...Object.fromEntries(["b1_items", "b2_items", "b3_items", "b4_items"].map(k => [k,

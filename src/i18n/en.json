@@ -52,7 +52,7 @@
   "svc3_t": "Self‑employed & gig work",
   "svc3_b": "Rideshare and delivery drivers, truckers, home daycare, cleaning, hair and beauty. We count your mileage and expenses so you pay tax on your profit, not on everything the app reports.",
   "svc4_t": "ITIN applications",
-  "svc4_b": "Help with Form W‑7 for a spouse or children who can't get a Social Security number, filed together with your return.",
+  "svc4_b": "Help with Form W‑7 for a spouse or children who can't get a Social Security number, filed together with your return. We'll explain how to send your ID documents to the IRS (originals or certified copies) or where to have them checked in person.",
   "svc5_t": "Past years & corrections",
   "svc5_b": "Didn't file last year, or found a mistake? We prepare late and amended returns and help you get back on track.",
   "svc6_t": "IRS & state letters",
@@ -117,7 +117,7 @@
   "faq_items": [
     ["Do I need to speak English?", "No. You can do the whole appointment in Arabic, Swahili, French or English. The forms are in English, as the IRS requires, but we explain every line in your language."],
     ["I live in Illinois and work in Iowa. Do I file two state returns?", "Usually just one. Iowa and Illinois have an agreement that taxes wages only in the state where you live. If the wrong state took tax from your paycheck, we file to get it back and show you how to fix it with your employer."],
-    ["My spouse or child doesn't have a Social Security number.", "They may be able to get an ITIN, a tax number from the IRS. We can help with the application (Form W‑7) and send it with your return."],
+    ["My spouse or child doesn't have a Social Security number.", "They may be able to get an ITIN, a tax number from the IRS. We can help with the application (Form W‑7) and send it with your return. We'll explain how to send your ID documents to the IRS (originals or certified copies) or where to have them checked in person."],
     ["I drive for Uber, Lyft or DoorDash. What do I need?", "The yearly summary from each app and a record of the miles you drove for work. Mileage often lowers your tax a lot, so even a rough record helps."],
     ["How much does it cost?", "It depends on your return, so we tell you the fee before we start. It's never a percentage of your refund."],
     ["When will I get my refund?", "The IRS says most e‑filed returns with direct deposit are refunded within 21 days. By law, refunds that include the earned income credit or the additional child tax credit can't be sent before mid‑February."],
@@ -127,7 +127,7 @@
   "c_eyebrow": "Book your appointment",
   "c_title": "Sit down with someone who speaks your language.",
   "c_area": "Serving families on both sides of the river:",
-  "c_hours": "By appointment · evenings and Saturdays during tax season",
+  "c_hours": "Tax season (mid‑January to April 15): Monday–Friday, 9 AM – 5 PM · Rest of the year: by appointment",
 
   "footer_tag": "Tax preparation in English, Arabic, Swahili and French for the Quad Cities.",
   "footer_irs": "Not affiliated with the IRS or any state tax agency.",

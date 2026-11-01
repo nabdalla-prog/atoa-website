@@ -52,7 +52,7 @@
   "svc3_t": "Kujiajiri na kazi za programu (apps)",
   "svc3_b": "Madereva wa Uber na wa kusambaza, madereva wa malori, kulea watoto nyumbani, usafi, kusuka nywele na urembo. Tunahesabu maili na gharama zako ili ulipe kodi kwa faida yako, si kwa kila kitu programu inachoripoti.",
   "svc4_t": "Maombi ya ITIN",
-  "svc4_b": "Msaada wa fomu W‑7 kwa mwenzi au watoto wasioweza kupata namba ya Social Security, inayotumwa pamoja na fomu yako ya kodi.",
+  "svc4_b": "Msaada wa fomu W‑7 kwa mwenzi au watoto wasioweza kupata namba ya Social Security, inayotumwa pamoja na fomu yako ya kodi. Tutakueleza jinsi ya kutuma hati za utambulisho kwa IRS (za asili au nakala zilizothibitishwa na ofisi iliyozitoa) au mahali pa kuzikagua ana kwa ana.",
   "svc5_t": "Miaka iliyopita na marekebisho",
   "svc5_b": "Hukujaza kodi mwaka jana, au umeona kosa? Tunaandaa fomu zilizochelewa na zilizorekebishwa, na kukusaidia kurudi kwenye mstari.",
   "svc6_t": "Barua za IRS na za jimbo",
@@ -117,7 +117,7 @@
   "faq_items": [
     ["Je, ni lazima nizungumze Kiingereza?", "Hapana. Miadi yote inaweza kufanyika kwa Kiswahili, Kiarabu, Kifaransa au Kiingereza. Fomu ziko kwa Kiingereza kama IRS inavyotaka, lakini tunakueleza kila mstari kwa lugha yako."],
     ["Ninaishi Illinois na ninafanya kazi Iowa. Je, nijaze fomu za majimbo mawili?", "Kwa kawaida ni moja tu. Iowa na Illinois zina makubaliano kwamba mishahara inatozwa kodi katika jimbo unaloishi tu. Kama jimbo lisilo sahihi lilikata kodi kwenye mshahara wako, tunaomba irudishwe na kukuonyesha jinsi ya kurekebisha hilo na mwajiri wako."],
-    ["Mwenzi wangu au mtoto wangu hana namba ya Social Security.", "Huenda anaweza kupata ITIN, namba ya kodi kutoka IRS. Tunakusaidia na maombi (fomu W‑7) na kuyatuma pamoja na fomu yako ya kodi."],
+    ["Mwenzi wangu au mtoto wangu hana namba ya Social Security.", "Huenda anaweza kupata ITIN, namba ya kodi kutoka IRS. Tunakusaidia na maombi (fomu W‑7) na kuyatuma pamoja na fomu yako ya kodi. Tutakueleza jinsi ya kutuma hati za utambulisho kwa IRS (za asili au nakala zilizothibitishwa na ofisi iliyozitoa) au mahali pa kuzikagua ana kwa ana."],
     ["Ninaendesha Uber, Lyft au DoorDash. Ninahitaji nini?", "Muhtasari wa mwaka kutoka kila programu na kumbukumbu ya maili ulizoendesha kwa ajili ya kazi. Maili mara nyingi hupunguza kodi sana, kwa hiyo hata kumbukumbu ya makadirio inasaidia."],
     ["Inagharimu kiasi gani?", "Inategemea fomu yako, kwa hiyo tunakuambia bei kabla ya kuanza. Kamwe si asilimia ya pesa zako za kurudishiwa."],
     ["Nitapata lini pesa zangu za kurudishiwa?", "IRS inasema fomu nyingi zilizotumwa mtandaoni zenye malipo moja kwa moja benki hulipwa ndani ya siku 21. Kwa sheria, pesa zinazojumuisha EITC au punguzo la ziada la watoto haziwezi kutumwa kabla ya katikati ya Februari."],
@@ -127,7 +127,7 @@
   "c_eyebrow": "Panga miadi yako",
   "c_title": "Keti na mtu anayezungumza lugha yako.",
   "c_area": "Tunahudumia familia za pande zote mbili za mto:",
-  "c_hours": "Kwa miadi · jioni na Jumamosi wakati wa msimu wa kodi",
+  "c_hours": "Msimu wa kodi (katikati ya Januari hadi Aprili 15): Jumatatu–Ijumaa, 9:00 – 17:00 · Mwaka uliobaki: kwa miadi",
 
   "footer_tag": "Huduma ya kodi kwa Kiswahili, Kiarabu, Kifaransa na Kiingereza kwa Quad Cities.",
   "footer_irs": "Hatuhusiani na IRS wala ofisi yoyote ya kodi ya jimbo.",
