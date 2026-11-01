@@ -46,7 +46,7 @@
 </div>
 
 <!-- ===== Nav ===== -->
-<header id="top" class="sticky top-0 z-40 bg-base-100/95 border-b border-transparent transition-colors" data-nav>
+<header id="top" class="sticky top-0 z-40 bg-base-100/95 border-b border-transparent transition-[transform,border-color] duration-300 motion-reduce:transition-none" data-nav>
   <nav class="mx-auto max-w-6xl px-4 sm:px-6 h-16 flex items-center justify-between gap-4" aria-label="{{nav_label}}">
     <a href="#top" dir="ltr" class="logo text-[1.75rem]" aria-label="AtoA">{{logo_mark}}<span>Ato<span class="logo-a">A</span></span></a>
     <ul class="hidden lg:flex items-center gap-7 text-sm text-base-content/75">
@@ -433,9 +433,16 @@
   });
   paintToggle();
 
-  // ===== Nav border on scroll =====
+  // ===== Nav: border once scrolled; slides away while reading down, comes back on scroll up =====
   const nav = document.querySelector("[data-nav]");
-  const onScroll = () => nav.classList.toggle("border-base-300", scrollY > 8);
+  let lastY = scrollY;
+  const onScroll = () => {
+    const y = scrollY;
+    nav.classList.toggle("border-base-300", y > 8);
+    if (Math.abs(y - lastY) < 6) return;
+    nav.classList.toggle("-translate-y-full", y > lastY && y > 80 && !nav.contains(document.activeElement));
+    lastY = y;
+  };
   addEventListener("scroll", onScroll, { passive: true }); onScroll();
 
   // ===== Deadlines: days remaining + next up =====
