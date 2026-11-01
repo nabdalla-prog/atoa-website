@@ -65,7 +65,7 @@
   "l_body": "Taxes are hard enough in your first language. AtoA is a tax office where Arabic, Swahili, French and English speakers talk directly with the person preparing their return. No interpreter needed.",
   "l_note": "Family members are welcome to come with you. We explain everything to the person signing, in the language they choose.",
 
-  "p_part": "Part III · How it works",
+  "p_part": "Part IV · How it works",
   "p_title": "From A to A: from your first document to an accepted return.",
   "p_body": "Five steps, and you'll always know which one you're on.",
   "p1": "Bring your documents. The checklist below shows exactly what you need.",
@@ -74,7 +74,7 @@
   "p4": "We go through your return line by line, in your language. Nothing is filed until you sign.",
   "p5": "We e‑file your federal and state returns and send you proof once they're accepted.",
 
-  "b_part": "Part IV · What to bring",
+  "b_part": "Part V · What to bring",
   "b_title": "Come once, with everything.",
   "b_body": "Tick off what you have. Not sure about a paper? Bring it anyway. It's easier to set one aside than to wait for one that's missing.",
   "b_print": "Print this list",
@@ -88,7 +88,7 @@
   "b4_items": ["Total income from your work or apps", "Miles you drove for work", "Receipts for supplies, phone and equipment", "Any estimated tax payments you made"],
   "b_note": "Received a letter from the IRS or the state? Bring that too.",
 
-  "t_part": "Part V · Trust",
+  "t_part": "Part VI · Trust",
   "t_title": "Know who's doing your taxes.",
   "t_body": "The IRS warns about “ghost preparers”: people who charge to do your taxes, don't sign the return, and disappear when there's a problem. Newcomers and families are common targets. Here's how we work, and the warning signs to watch for anywhere.",
   "t_link": "IRS guide: how to choose a tax preparer",
@@ -97,7 +97,7 @@
   "t_warn_h": "Warning signs, anywhere",
   "t_warnings": ["The preparer won't sign the return.", "You're asked to sign a blank or unfinished form.", "A big refund is promised before anyone sees your papers.", "Your refund goes to someone else's account.", "Cash only, and no receipt."],
 
-  "a_part": "Part VI · About us",
+  "a_part": "Part III · About us",
   "a_title": "Meet our founder, Kakozi Elangi.",
   "a_body1": "Kakozi Elangi is from Congo and speaks six languages: Swahili, Lingala, French, English, Kirundi and Kinyarwanda. He founded AtoA in 2003 to give families honest, careful tax help in a language they understand.",
   "a_body2": "He is passionate about lifting up the African community and speaking up for it. He believes unity is what takes us to a better future, and that it starts with neighbors helping each other understand the system they live in.",

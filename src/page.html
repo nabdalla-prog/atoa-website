@@ -44,8 +44,8 @@
         <ul tabindex="0" class="dropdown-content menu bg-base-100 border border-base-300 rounded-box w-60 p-2 mt-2 shadow-lg">
           <li><a href="#services">{{nav_services}}</a></li>
           <li><a href="#languages">{{nav_languages}}</a></li>
-          <li><a href="#bring">{{nav_bring}}</a></li>
           <li><a href="#about">{{nav_about}}</a></li>
+          <li><a href="#bring">{{nav_bring}}</a></li>
           <li><a href="#deadlines">{{nav_deadlines}}</a></li>
           <li><a href="#faq">{{nav_faq}}</a></li>
           <li class="sm:hidden mt-1 pt-2 border-t border-base-300"><button data-book class="font-medium text-primary">{{cta_short}}</button></li>
@@ -179,69 +179,8 @@
   </div>
 </section>
 
-<!-- ===== Part III · Process ===== -->
-<section id="process" class="mx-auto max-w-6xl px-4 sm:px-6 py-24">
-  <p class="part">{{p_part}}</p>
-  <div class="mt-8 grid lg:grid-cols-12 gap-8 items-end">
-    <h2 class="lg:col-span-7 text-4xl sm:text-[2.75rem] leading-tight text-base-content">{{p_title}}</h2>
-    <p class="lg:col-span-5 text-base-content/70 leading-relaxed">{{p_body}}</p>
-  </div>
-  <ol class="mt-14 grid md:grid-cols-5 border-t border-neutral/80">
-    <li class="step-col"><span class="line-no">01</span><h3 class="step-t">{{step1}}</h3><p class="step-b">{{p1}}</p></li>
-    <li class="step-col"><span class="line-no">02</span><h3 class="step-t">{{step2}}</h3><p class="step-b">{{p2}}</p></li>
-    <li class="step-col"><span class="line-no">03</span><h3 class="step-t">{{step3}}</h3><p class="step-b">{{p3}}</p></li>
-    <li class="step-col"><span class="line-no">04</span><h3 class="step-t">{{step4}}</h3><p class="step-b">{{p4}}</p></li>
-    <li class="step-col"><span class="line-no text-accent">05</span><h3 class="step-t text-primary">{{step5}}</h3><p class="step-b">{{p5}}</p></li>
-  </ol>
-</section>
-
-<!-- ===== Part IV · What to bring ===== -->
-<section id="bring" class="bg-base-200/60 border-y border-base-300">
-  <div class="mx-auto max-w-6xl px-4 sm:px-6 py-24">
-    <p class="part">{{b_part}}</p>
-    <div class="mt-8 flex flex-wrap items-end justify-between gap-6">
-      <div class="max-w-2xl">
-        <h2 class="text-4xl sm:text-[2.75rem] leading-tight text-base-content">{{b_title}}</h2>
-        <p class="mt-5 text-base-content/70 leading-relaxed">{{b_body}}</p>
-      </div>
-      <button class="btn btn-outline border-base-300 bg-base-100 print:hidden" onclick="print()">
-        <svg viewBox="0 0 24 24" class="size-4" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M7 9V3h10v6M7 17H5a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-2M7 14h10v7H7z"/></svg>
-        {{b_print}}</button>
-    </div>
-    <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-      <div class="bring-card"><h3 class="bring-h">{{b1_t}}</h3><ul class="bring-list">{{b1_items}}</ul></div>
-      <div class="bring-card"><h3 class="bring-h">{{b2_t}}</h3><ul class="bring-list">{{b2_items}}</ul></div>
-      <div class="bring-card"><h3 class="bring-h">{{b3_t}}</h3><ul class="bring-list">{{b3_items}}</ul></div>
-      <div class="bring-card"><h3 class="bring-h">{{b4_t}}</h3><ul class="bring-list">{{b4_items}}</ul></div>
-    </div>
-    <p class="mt-6 text-sm text-base-content/60">{{b_note}}</p>
-  </div>
-</section>
-
-<!-- ===== Part V · Trust ===== -->
-<section id="trust" class="mx-auto max-w-6xl px-4 sm:px-6 py-24">
-  <p class="part">{{t_part}}</p>
-  <div class="mt-8 grid lg:grid-cols-12 gap-12">
-    <div class="lg:col-span-5">
-      <h2 class="text-4xl sm:text-[2.75rem] leading-tight text-base-content">{{t_title}}</h2>
-      <p class="mt-5 text-base-content/70 leading-relaxed">{{t_body}}</p>
-      <a class="mt-6 inline-block text-sm link-quiet" href="https://www.irs.gov/tax-professionals/choosing-a-tax-professional" target="_blank" rel="noopener">{{t_link}}</a>
-    </div>
-    <div class="lg:col-span-7 grid sm:grid-cols-2 gap-px bg-base-300 rounded-box overflow-hidden border border-base-300">
-      <div class="bg-base-100 p-6 sm:p-7">
-        <p class="font-medium text-primary flex items-center gap-2"><svg viewBox="0 0 24 24" class="size-5" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3 4.5 6v5.5c0 4.6 3.2 8.4 7.5 9.5 4.3-1.1 7.5-4.9 7.5-9.5V6L12 3Z"/><path d="m9 12 2 2 4-4"/></svg>{{t_promise_h}}</p>
-        <ul class="mt-5 space-y-3.5 text-sm">{{t_promises}}</ul>
-      </div>
-      <div class="bg-base-100 p-6 sm:p-7">
-        <p class="font-medium text-error flex items-center gap-2"><svg viewBox="0 0 24 24" class="size-5" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 9v4m0 3.5v.01M10.3 3.9 2.6 17.5A2 2 0 0 0 4.3 20.5h15.4a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/></svg>{{t_warn_h}}</p>
-        <ul class="mt-5 space-y-3.5 text-sm text-base-content/75">{{t_warnings}}</ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== Part VI · About us ===== -->
-<section id="about" class="border-t border-base-300">
+<!-- ===== Part III · About us (who you'll be talking to, right after the languages) ===== -->
+<section id="about" class="bg-base-200/60 border-b border-base-300">
   <div class="mx-auto max-w-6xl px-4 sm:px-6 py-24">
     <p class="part">{{a_part}}</p>
     <div class="mt-8 grid lg:grid-cols-12 gap-10 lg:gap-14 items-center">
@@ -270,7 +209,7 @@
 
     <!-- Team -->
     <h3 class="mt-20 eyebrow">{{a_team}}</h3>
-    <div class="mt-6 grid sm:grid-cols-[11rem_1fr] gap-6 sm:gap-8 items-center rounded-box border border-base-300 bg-base-200/60 p-5 sm:p-6 max-w-3xl">
+    <div class="mt-6 grid sm:grid-cols-[11rem_1fr] gap-6 sm:gap-8 items-center rounded-box border border-base-300 bg-base-100 p-5 sm:p-6 max-w-3xl">
       <picture>
         <source srcset="{{root}}assets/nadir.webp" type="image/webp">
         <img src="{{root}}assets/nadir.jpg" alt="{{n_alt}}" width="720" height="960" loading="lazy" decoding="async" class="w-40 sm:w-full aspect-[3/4] object-cover rounded-box border border-base-300">
@@ -279,6 +218,67 @@
         <p class="font-display text-xl font-semibold text-base-content">{{n_name}}</p>
         <p class="mt-1 text-sm text-secondary">{{n_role}}</p>
         <p class="mt-4 text-base-content/70 leading-relaxed">{{n_body}}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Part IV · Process ===== -->
+<section id="process" class="mx-auto max-w-6xl px-4 sm:px-6 py-24">
+  <p class="part">{{p_part}}</p>
+  <div class="mt-8 grid lg:grid-cols-12 gap-8 items-end">
+    <h2 class="lg:col-span-7 text-4xl sm:text-[2.75rem] leading-tight text-base-content">{{p_title}}</h2>
+    <p class="lg:col-span-5 text-base-content/70 leading-relaxed">{{p_body}}</p>
+  </div>
+  <ol class="mt-14 grid md:grid-cols-5 border-t border-neutral/80">
+    <li class="step-col"><span class="line-no">01</span><h3 class="step-t">{{step1}}</h3><p class="step-b">{{p1}}</p></li>
+    <li class="step-col"><span class="line-no">02</span><h3 class="step-t">{{step2}}</h3><p class="step-b">{{p2}}</p></li>
+    <li class="step-col"><span class="line-no">03</span><h3 class="step-t">{{step3}}</h3><p class="step-b">{{p3}}</p></li>
+    <li class="step-col"><span class="line-no">04</span><h3 class="step-t">{{step4}}</h3><p class="step-b">{{p4}}</p></li>
+    <li class="step-col"><span class="line-no text-accent">05</span><h3 class="step-t text-primary">{{step5}}</h3><p class="step-b">{{p5}}</p></li>
+  </ol>
+</section>
+
+<!-- ===== Part V · What to bring ===== -->
+<section id="bring" class="bg-base-200/60 border-y border-base-300">
+  <div class="mx-auto max-w-6xl px-4 sm:px-6 py-24">
+    <p class="part">{{b_part}}</p>
+    <div class="mt-8 flex flex-wrap items-end justify-between gap-6">
+      <div class="max-w-2xl">
+        <h2 class="text-4xl sm:text-[2.75rem] leading-tight text-base-content">{{b_title}}</h2>
+        <p class="mt-5 text-base-content/70 leading-relaxed">{{b_body}}</p>
+      </div>
+      <button class="btn btn-outline border-base-300 bg-base-100 print:hidden" onclick="print()">
+        <svg viewBox="0 0 24 24" class="size-4" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M7 9V3h10v6M7 17H5a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-2M7 14h10v7H7z"/></svg>
+        {{b_print}}</button>
+    </div>
+    <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      <div class="bring-card"><h3 class="bring-h">{{b1_t}}</h3><ul class="bring-list">{{b1_items}}</ul></div>
+      <div class="bring-card"><h3 class="bring-h">{{b2_t}}</h3><ul class="bring-list">{{b2_items}}</ul></div>
+      <div class="bring-card"><h3 class="bring-h">{{b3_t}}</h3><ul class="bring-list">{{b3_items}}</ul></div>
+      <div class="bring-card"><h3 class="bring-h">{{b4_t}}</h3><ul class="bring-list">{{b4_items}}</ul></div>
+    </div>
+    <p class="mt-6 text-sm text-base-content/60">{{b_note}}</p>
+  </div>
+</section>
+
+<!-- ===== Part VI · Trust ===== -->
+<section id="trust" class="mx-auto max-w-6xl px-4 sm:px-6 py-24">
+  <p class="part">{{t_part}}</p>
+  <div class="mt-8 grid lg:grid-cols-12 gap-12">
+    <div class="lg:col-span-5">
+      <h2 class="text-4xl sm:text-[2.75rem] leading-tight text-base-content">{{t_title}}</h2>
+      <p class="mt-5 text-base-content/70 leading-relaxed">{{t_body}}</p>
+      <a class="mt-6 inline-block text-sm link-quiet" href="https://www.irs.gov/tax-professionals/choosing-a-tax-professional" target="_blank" rel="noopener">{{t_link}}</a>
+    </div>
+    <div class="lg:col-span-7 grid sm:grid-cols-2 gap-px bg-base-300 rounded-box overflow-hidden border border-base-300">
+      <div class="bg-base-100 p-6 sm:p-7">
+        <p class="font-medium text-primary flex items-center gap-2"><svg viewBox="0 0 24 24" class="size-5" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3 4.5 6v5.5c0 4.6 3.2 8.4 7.5 9.5 4.3-1.1 7.5-4.9 7.5-9.5V6L12 3Z"/><path d="m9 12 2 2 4-4"/></svg>{{t_promise_h}}</p>
+        <ul class="mt-5 space-y-3.5 text-sm">{{t_promises}}</ul>
+      </div>
+      <div class="bg-base-100 p-6 sm:p-7">
+        <p class="font-medium text-error flex items-center gap-2"><svg viewBox="0 0 24 24" class="size-5" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 9v4m0 3.5v.01M10.3 3.9 2.6 17.5A2 2 0 0 0 4.3 20.5h15.4a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/></svg>{{t_warn_h}}</p>
+        <ul class="mt-5 space-y-3.5 text-sm text-base-content/75">{{t_warnings}}</ul>
       </div>
     </div>
   </div>

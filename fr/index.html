@@ -77,8 +77,8 @@
         <ul tabindex="0" class="dropdown-content menu bg-base-100 border border-base-300 rounded-box w-60 p-2 mt-2 shadow-lg">
           <li><a href="#services">Services</a></li>
           <li><a href="#languages">Nos langues</a></li>
-          <li><a href="#bring">Quoi apporter</a></li>
           <li><a href="#about">À propos</a></li>
+          <li><a href="#bring">Quoi apporter</a></li>
           <li><a href="#deadlines">Échéances</a></li>
           <li><a href="#faq">Questions</a></li>
           <li class="sm:hidden mt-1 pt-2 border-t border-base-300"><button data-book class="font-medium text-primary">Rendez‑vous</button></li>
@@ -212,71 +212,10 @@
   </div>
 </section>
 
-<!-- ===== Part III · Process ===== -->
-<section id="process" class="mx-auto max-w-6xl px-4 sm:px-6 py-24">
-  <p class="part">Partie III · Comment ça marche</p>
-  <div class="mt-8 grid lg:grid-cols-12 gap-8 items-end">
-    <h2 class="lg:col-span-7 text-4xl sm:text-[2.75rem] leading-tight text-base-content">De A à A : du premier document à la déclaration acceptée.</h2>
-    <p class="lg:col-span-5 text-base-content/70 leading-relaxed">Cinq étapes, et vous savez toujours où vous en êtes.</p>
-  </div>
-  <ol class="mt-14 grid md:grid-cols-5 border-t border-neutral/80">
-    <li class="step-col"><span class="line-no">01</span><h3 class="step-t">Rassembler</h3><p class="step-b">Apportez vos documents. La liste ci‑dessous indique exactement ce qu'il faut.</p></li>
-    <li class="step-col"><span class="line-no">02</span><h3 class="step-t">Vérifier</h3><p class="step-b">Nous vérifions chaque W‑2, 1099 et reçu, et les comparons à la déclaration de l'an dernier.</p></li>
-    <li class="step-col"><span class="line-no">03</span><h3 class="step-t">Appliquer</h3><p class="step-b">Nous appliquons chaque déduction et crédit auxquels vous avez droit, et expliquons ceux qui ne s'appliquent pas.</p></li>
-    <li class="step-col"><span class="line-no">04</span><h3 class="step-t">Approuver</h3><p class="step-b">Nous parcourons votre déclaration ligne par ligne, dans votre langue. Rien n'est envoyé avant votre signature.</p></li>
-    <li class="step-col"><span class="line-no text-accent">05</span><h3 class="step-t text-primary">Acceptée</h3><p class="step-b">Nous télédéclarons au fédéral et à l'État, et vous envoyons la preuve dès qu'elles sont acceptées.</p></li>
-  </ol>
-</section>
-
-<!-- ===== Part IV · What to bring ===== -->
-<section id="bring" class="bg-base-200/60 border-y border-base-300">
+<!-- ===== Part III · About us (who you'll be talking to, right after the languages) ===== -->
+<section id="about" class="bg-base-200/60 border-b border-base-300">
   <div class="mx-auto max-w-6xl px-4 sm:px-6 py-24">
-    <p class="part">Partie IV · Quoi apporter</p>
-    <div class="mt-8 flex flex-wrap items-end justify-between gap-6">
-      <div class="max-w-2xl">
-        <h2 class="text-4xl sm:text-[2.75rem] leading-tight text-base-content">Venez une fois, avec tout.</h2>
-        <p class="mt-5 text-base-content/70 leading-relaxed">Cochez ce que vous avez. Pas sûr pour un papier ? Apportez‑le quand même. Il est plus facile d'en mettre un de côté que d'attendre celui qui manque.</p>
-      </div>
-      <button class="btn btn-outline border-base-300 bg-base-100 print:hidden" onclick="print()">
-        <svg viewBox="0 0 24 24" class="size-4" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M7 9V3h10v6M7 17H5a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-2M7 14h10v7H7z"/></svg>
-        Imprimer la liste</button>
-    </div>
-    <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-      <div class="bring-card"><h3 class="bring-h">Pour tout le monde</h3><ul class="bring-list"><li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>Pièce d'identité avec photo pour vous et votre conjoint</span></label></li><li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>Cartes de sécurité sociale ou lettres ITIN de chaque personne sur la déclaration</span></label></li><li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>La déclaration de l'an dernier</span></label></li><li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>Numéro de compte et numéro de routage bancaire pour le remboursement</span></label></li></ul></div>
-      <div class="bring-card"><h3 class="bring-h">Revenus</h3><ul class="bring-list"><li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>Un W‑2 de chaque emploi</span></label></li><li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>1099‑NEC ou 1099‑K des applications comme Uber, Lyft ou DoorDash</span></label></li><li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>1099‑G si vous avez reçu le chômage</span></label></li><li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>SSA‑1099 ou 1099‑R pour la sécurité sociale ou une pension</span></label></li></ul></div>
-      <div class="bring-card"><h3 class="bring-h">Famille et logement</h3><ul class="bring-list"><li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>Nom, adresse, numéro fiscal de la garde d'enfants et montant payé</span></label></li><li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>1098‑T pour les frais universitaires</span></label></li><li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>1095‑A si votre assurance vient de HealthCare.gov</span></label></li><li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>1098 pour les intérêts du prêt immobilier, et votre taxe foncière</span></label></li></ul></div>
-      <div class="bring-card"><h3 class="bring-h">Indépendants</h3><ul class="bring-list"><li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>Revenu total de votre activité ou des applications</span></label></li><li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>Les kilomètres parcourus pour le travail</span></label></li><li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>Reçus de fournitures, téléphone et équipement</span></label></li><li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>Les acomptes d'impôt déjà payés</span></label></li></ul></div>
-    </div>
-    <p class="mt-6 text-sm text-base-content/60">Vous avez reçu une lettre de l'IRS ou de l'État ? Apportez‑la aussi.</p>
-  </div>
-</section>
-
-<!-- ===== Part V · Trust ===== -->
-<section id="trust" class="mx-auto max-w-6xl px-4 sm:px-6 py-24">
-  <p class="part">Partie V · Confiance</p>
-  <div class="mt-8 grid lg:grid-cols-12 gap-12">
-    <div class="lg:col-span-5">
-      <h2 class="text-4xl sm:text-[2.75rem] leading-tight text-base-content">Sachez qui prépare vos impôts.</h2>
-      <p class="mt-5 text-base-content/70 leading-relaxed">L'IRS met en garde contre les « préparateurs fantômes » : des personnes qui se font payer pour vos impôts, ne signent pas la déclaration et disparaissent en cas de problème. Les nouveaux arrivants et les familles sont souvent visés. Voici comment nous travaillons, et les signaux d'alerte à surveiller partout.</p>
-      <a class="mt-6 inline-block text-sm link-quiet" href="https://www.irs.gov/tax-professionals/choosing-a-tax-professional" target="_blank" rel="noopener">Guide de l'IRS : bien choisir son préparateur</a>
-    </div>
-    <div class="lg:col-span-7 grid sm:grid-cols-2 gap-px bg-base-300 rounded-box overflow-hidden border border-base-300">
-      <div class="bg-base-100 p-6 sm:p-7">
-        <p class="font-medium text-primary flex items-center gap-2"><svg viewBox="0 0 24 24" class="size-5" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3 4.5 6v5.5c0 4.6 3.2 8.4 7.5 9.5 4.3-1.1 7.5-4.9 7.5-9.5V6L12 3Z"/><path d="m9 12 2 2 4-4"/></svg>Nos engagements</p>
-        <ul class="mt-5 space-y-3.5 text-sm"><li class="flex gap-3"><svg viewBox="0 0 24 24" class="size-4 mt-0.5 shrink-0 text-success" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg><span>Nous signons chaque déclaration que nous préparons, avec notre numéro de préparateur IRS (PTIN).</span></li><li class="flex gap-3"><svg viewBox="0 0 24 24" class="size-4 mt-0.5 shrink-0 text-success" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg><span>Votre remboursement va uniquement sur votre propre compte.</span></li><li class="flex gap-3"><svg viewBox="0 0 24 24" class="size-4 mt-0.5 shrink-0 text-success" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg><span>Nos honoraires ne sont jamais un pourcentage de votre remboursement.</span></li><li class="flex gap-3"><svg viewBox="0 0 24 24" class="size-4 mt-0.5 shrink-0 text-success" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg><span>Vous recevez une copie de tout ce que vous signez.</span></li><li class="flex gap-3"><svg viewBox="0 0 24 24" class="size-4 mt-0.5 shrink-0 text-success" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg><span>Nous vous annonçons le prix avant de commencer.</span></li></ul>
-      </div>
-      <div class="bg-base-100 p-6 sm:p-7">
-        <p class="font-medium text-error flex items-center gap-2"><svg viewBox="0 0 24 24" class="size-5" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 9v4m0 3.5v.01M10.3 3.9 2.6 17.5A2 2 0 0 0 4.3 20.5h15.4a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/></svg>Signaux d'alerte, partout</p>
-        <ul class="mt-5 space-y-3.5 text-sm text-base-content/75"><li class="flex gap-3"><svg viewBox="0 0 24 24" class="size-4 mt-0.5 shrink-0 text-error" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg><span>Le préparateur refuse de signer la déclaration.</span></li><li class="flex gap-3"><svg viewBox="0 0 24 24" class="size-4 mt-0.5 shrink-0 text-error" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg><span>On vous demande de signer un formulaire vide ou incomplet.</span></li><li class="flex gap-3"><svg viewBox="0 0 24 24" class="size-4 mt-0.5 shrink-0 text-error" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg><span>Un gros remboursement est promis avant de voir vos papiers.</span></li><li class="flex gap-3"><svg viewBox="0 0 24 24" class="size-4 mt-0.5 shrink-0 text-error" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg><span>Votre remboursement va sur le compte de quelqu'un d'autre.</span></li><li class="flex gap-3"><svg viewBox="0 0 24 24" class="size-4 mt-0.5 shrink-0 text-error" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg><span>Paiement en espèces uniquement, sans reçu.</span></li></ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== Part VI · About us ===== -->
-<section id="about" class="border-t border-base-300">
-  <div class="mx-auto max-w-6xl px-4 sm:px-6 py-24">
-    <p class="part">Partie VI · Qui sommes‑nous</p>
+    <p class="part">Partie III · Qui sommes‑nous</p>
     <div class="mt-8 grid lg:grid-cols-12 gap-10 lg:gap-14 items-center">
       <figure class="lg:col-span-5 max-w-sm mx-auto lg:max-w-none w-full">
         <picture>
@@ -303,7 +242,7 @@
 
     <!-- Team -->
     <h3 class="mt-20 eyebrow">Notre équipe</h3>
-    <div class="mt-6 grid sm:grid-cols-[11rem_1fr] gap-6 sm:gap-8 items-center rounded-box border border-base-300 bg-base-200/60 p-5 sm:p-6 max-w-3xl">
+    <div class="mt-6 grid sm:grid-cols-[11rem_1fr] gap-6 sm:gap-8 items-center rounded-box border border-base-300 bg-base-100 p-5 sm:p-6 max-w-3xl">
       <picture>
         <source srcset="../assets/nadir.webp" type="image/webp">
         <img src="../assets/nadir.jpg" alt="Nadir Abdalla, équipe AtoA" width="720" height="960" loading="lazy" decoding="async" class="w-40 sm:w-full aspect-[3/4] object-cover rounded-box border border-base-300">
@@ -312,6 +251,67 @@
         <p class="font-display text-xl font-semibold text-base-content">Nadir Abdalla</p>
         <p class="mt-1 text-sm text-secondary">Collaborateur fiscal</p>
         <p class="mt-4 text-base-content/70 leading-relaxed">Nadir est originaire du Soudan. Il a rencontré Kakozi en 2024, a été touché par sa passion pour la communauté et a rejoint l'équipe. Aujourd'hui, il accompagne nos clients arabophones, pour qu'ils puissent poser toutes leurs questions dans leur langue.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Part IV · Process ===== -->
+<section id="process" class="mx-auto max-w-6xl px-4 sm:px-6 py-24">
+  <p class="part">Partie IV · Comment ça marche</p>
+  <div class="mt-8 grid lg:grid-cols-12 gap-8 items-end">
+    <h2 class="lg:col-span-7 text-4xl sm:text-[2.75rem] leading-tight text-base-content">De A à A : du premier document à la déclaration acceptée.</h2>
+    <p class="lg:col-span-5 text-base-content/70 leading-relaxed">Cinq étapes, et vous savez toujours où vous en êtes.</p>
+  </div>
+  <ol class="mt-14 grid md:grid-cols-5 border-t border-neutral/80">
+    <li class="step-col"><span class="line-no">01</span><h3 class="step-t">Rassembler</h3><p class="step-b">Apportez vos documents. La liste ci‑dessous indique exactement ce qu'il faut.</p></li>
+    <li class="step-col"><span class="line-no">02</span><h3 class="step-t">Vérifier</h3><p class="step-b">Nous vérifions chaque W‑2, 1099 et reçu, et les comparons à la déclaration de l'an dernier.</p></li>
+    <li class="step-col"><span class="line-no">03</span><h3 class="step-t">Appliquer</h3><p class="step-b">Nous appliquons chaque déduction et crédit auxquels vous avez droit, et expliquons ceux qui ne s'appliquent pas.</p></li>
+    <li class="step-col"><span class="line-no">04</span><h3 class="step-t">Approuver</h3><p class="step-b">Nous parcourons votre déclaration ligne par ligne, dans votre langue. Rien n'est envoyé avant votre signature.</p></li>
+    <li class="step-col"><span class="line-no text-accent">05</span><h3 class="step-t text-primary">Acceptée</h3><p class="step-b">Nous télédéclarons au fédéral et à l'État, et vous envoyons la preuve dès qu'elles sont acceptées.</p></li>
+  </ol>
+</section>
+
+<!-- ===== Part V · What to bring ===== -->
+<section id="bring" class="bg-base-200/60 border-y border-base-300">
+  <div class="mx-auto max-w-6xl px-4 sm:px-6 py-24">
+    <p class="part">Partie V · Quoi apporter</p>
+    <div class="mt-8 flex flex-wrap items-end justify-between gap-6">
+      <div class="max-w-2xl">
+        <h2 class="text-4xl sm:text-[2.75rem] leading-tight text-base-content">Venez une fois, avec tout.</h2>
+        <p class="mt-5 text-base-content/70 leading-relaxed">Cochez ce que vous avez. Pas sûr pour un papier ? Apportez‑le quand même. Il est plus facile d'en mettre un de côté que d'attendre celui qui manque.</p>
+      </div>
+      <button class="btn btn-outline border-base-300 bg-base-100 print:hidden" onclick="print()">
+        <svg viewBox="0 0 24 24" class="size-4" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M7 9V3h10v6M7 17H5a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-2M7 14h10v7H7z"/></svg>
+        Imprimer la liste</button>
+    </div>
+    <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      <div class="bring-card"><h3 class="bring-h">Pour tout le monde</h3><ul class="bring-list"><li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>Pièce d'identité avec photo pour vous et votre conjoint</span></label></li><li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>Cartes de sécurité sociale ou lettres ITIN de chaque personne sur la déclaration</span></label></li><li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>La déclaration de l'an dernier</span></label></li><li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>Numéro de compte et numéro de routage bancaire pour le remboursement</span></label></li></ul></div>
+      <div class="bring-card"><h3 class="bring-h">Revenus</h3><ul class="bring-list"><li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>Un W‑2 de chaque emploi</span></label></li><li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>1099‑NEC ou 1099‑K des applications comme Uber, Lyft ou DoorDash</span></label></li><li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>1099‑G si vous avez reçu le chômage</span></label></li><li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>SSA‑1099 ou 1099‑R pour la sécurité sociale ou une pension</span></label></li></ul></div>
+      <div class="bring-card"><h3 class="bring-h">Famille et logement</h3><ul class="bring-list"><li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>Nom, adresse, numéro fiscal de la garde d'enfants et montant payé</span></label></li><li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>1098‑T pour les frais universitaires</span></label></li><li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>1095‑A si votre assurance vient de HealthCare.gov</span></label></li><li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>1098 pour les intérêts du prêt immobilier, et votre taxe foncière</span></label></li></ul></div>
+      <div class="bring-card"><h3 class="bring-h">Indépendants</h3><ul class="bring-list"><li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>Revenu total de votre activité ou des applications</span></label></li><li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>Les kilomètres parcourus pour le travail</span></label></li><li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>Reçus de fournitures, téléphone et équipement</span></label></li><li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>Les acomptes d'impôt déjà payés</span></label></li></ul></div>
+    </div>
+    <p class="mt-6 text-sm text-base-content/60">Vous avez reçu une lettre de l'IRS ou de l'État ? Apportez‑la aussi.</p>
+  </div>
+</section>
+
+<!-- ===== Part VI · Trust ===== -->
+<section id="trust" class="mx-auto max-w-6xl px-4 sm:px-6 py-24">
+  <p class="part">Partie VI · Confiance</p>
+  <div class="mt-8 grid lg:grid-cols-12 gap-12">
+    <div class="lg:col-span-5">
+      <h2 class="text-4xl sm:text-[2.75rem] leading-tight text-base-content">Sachez qui prépare vos impôts.</h2>
+      <p class="mt-5 text-base-content/70 leading-relaxed">L'IRS met en garde contre les « préparateurs fantômes » : des personnes qui se font payer pour vos impôts, ne signent pas la déclaration et disparaissent en cas de problème. Les nouveaux arrivants et les familles sont souvent visés. Voici comment nous travaillons, et les signaux d'alerte à surveiller partout.</p>
+      <a class="mt-6 inline-block text-sm link-quiet" href="https://www.irs.gov/tax-professionals/choosing-a-tax-professional" target="_blank" rel="noopener">Guide de l'IRS : bien choisir son préparateur</a>
+    </div>
+    <div class="lg:col-span-7 grid sm:grid-cols-2 gap-px bg-base-300 rounded-box overflow-hidden border border-base-300">
+      <div class="bg-base-100 p-6 sm:p-7">
+        <p class="font-medium text-primary flex items-center gap-2"><svg viewBox="0 0 24 24" class="size-5" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3 4.5 6v5.5c0 4.6 3.2 8.4 7.5 9.5 4.3-1.1 7.5-4.9 7.5-9.5V6L12 3Z"/><path d="m9 12 2 2 4-4"/></svg>Nos engagements</p>
+        <ul class="mt-5 space-y-3.5 text-sm"><li class="flex gap-3"><svg viewBox="0 0 24 24" class="size-4 mt-0.5 shrink-0 text-success" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg><span>Nous signons chaque déclaration que nous préparons, avec notre numéro de préparateur IRS (PTIN).</span></li><li class="flex gap-3"><svg viewBox="0 0 24 24" class="size-4 mt-0.5 shrink-0 text-success" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg><span>Votre remboursement va uniquement sur votre propre compte.</span></li><li class="flex gap-3"><svg viewBox="0 0 24 24" class="size-4 mt-0.5 shrink-0 text-success" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg><span>Nos honoraires ne sont jamais un pourcentage de votre remboursement.</span></li><li class="flex gap-3"><svg viewBox="0 0 24 24" class="size-4 mt-0.5 shrink-0 text-success" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg><span>Vous recevez une copie de tout ce que vous signez.</span></li><li class="flex gap-3"><svg viewBox="0 0 24 24" class="size-4 mt-0.5 shrink-0 text-success" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg><span>Nous vous annonçons le prix avant de commencer.</span></li></ul>
+      </div>
+      <div class="bg-base-100 p-6 sm:p-7">
+        <p class="font-medium text-error flex items-center gap-2"><svg viewBox="0 0 24 24" class="size-5" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 9v4m0 3.5v.01M10.3 3.9 2.6 17.5A2 2 0 0 0 4.3 20.5h15.4a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/></svg>Signaux d'alerte, partout</p>
+        <ul class="mt-5 space-y-3.5 text-sm text-base-content/75"><li class="flex gap-3"><svg viewBox="0 0 24 24" class="size-4 mt-0.5 shrink-0 text-error" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg><span>Le préparateur refuse de signer la déclaration.</span></li><li class="flex gap-3"><svg viewBox="0 0 24 24" class="size-4 mt-0.5 shrink-0 text-error" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg><span>On vous demande de signer un formulaire vide ou incomplet.</span></li><li class="flex gap-3"><svg viewBox="0 0 24 24" class="size-4 mt-0.5 shrink-0 text-error" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg><span>Un gros remboursement est promis avant de voir vos papiers.</span></li><li class="flex gap-3"><svg viewBox="0 0 24 24" class="size-4 mt-0.5 shrink-0 text-error" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg><span>Votre remboursement va sur le compte de quelqu'un d'autre.</span></li><li class="flex gap-3"><svg viewBox="0 0 24 24" class="size-4 mt-0.5 shrink-0 text-error" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg><span>Paiement en espèces uniquement, sans reçu.</span></li></ul>
       </div>
     </div>
   </div>

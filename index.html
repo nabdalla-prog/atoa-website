@@ -77,8 +77,8 @@
         <ul tabindex="0" class="dropdown-content menu bg-base-100 border border-base-300 rounded-box w-60 p-2 mt-2 shadow-lg">
           <li><a href="#services">Services</a></li>
           <li><a href="#languages">Languages</a></li>
-          <li><a href="#bring">What to bring</a></li>
           <li><a href="#about">About</a></li>
+          <li><a href="#bring">What to bring</a></li>
           <li><a href="#deadlines">Deadlines</a></li>
           <li><a href="#faq">FAQ</a></li>
           <li class="sm:hidden mt-1 pt-2 border-t border-base-300"><button data-book class="font-medium text-primary">Book</button></li>
@@ -212,71 +212,10 @@
   </div>
 </section>
 
-<!-- ===== Part III · Process ===== -->
-<section id="process" class="mx-auto max-w-6xl px-4 sm:px-6 py-24">
-  <p class="part">Part III · How it works</p>
-  <div class="mt-8 grid lg:grid-cols-12 gap-8 items-end">
-    <h2 class="lg:col-span-7 text-4xl sm:text-[2.75rem] leading-tight text-base-content">From A to A: from your first document to an accepted return.</h2>
-    <p class="lg:col-span-5 text-base-content/70 leading-relaxed">Five steps, and you'll always know which one you're on.</p>
-  </div>
-  <ol class="mt-14 grid md:grid-cols-5 border-t border-neutral/80">
-    <li class="step-col"><span class="line-no">01</span><h3 class="step-t">Assemble</h3><p class="step-b">Bring your documents. The checklist below shows exactly what you need.</p></li>
-    <li class="step-col"><span class="line-no">02</span><h3 class="step-t">Account</h3><p class="step-b">We check every W‑2, 1099 and receipt, and compare them with last year's return.</p></li>
-    <li class="step-col"><span class="line-no">03</span><h3 class="step-t">Apply</h3><p class="step-b">We apply every deduction and credit you qualify for, and explain the ones you don't.</p></li>
-    <li class="step-col"><span class="line-no">04</span><h3 class="step-t">Approve</h3><p class="step-b">We go through your return line by line, in your language. Nothing is filed until you sign.</p></li>
-    <li class="step-col"><span class="line-no text-accent">05</span><h3 class="step-t text-primary">Accepted</h3><p class="step-b">We e‑file your federal and state returns and send you proof once they're accepted.</p></li>
-  </ol>
-</section>
-
-<!-- ===== Part IV · What to bring ===== -->
-<section id="bring" class="bg-base-200/60 border-y border-base-300">
+<!-- ===== Part III · About us (who you'll be talking to, right after the languages) ===== -->
+<section id="about" class="bg-base-200/60 border-b border-base-300">
   <div class="mx-auto max-w-6xl px-4 sm:px-6 py-24">
-    <p class="part">Part IV · What to bring</p>
-    <div class="mt-8 flex flex-wrap items-end justify-between gap-6">
-      <div class="max-w-2xl">
-        <h2 class="text-4xl sm:text-[2.75rem] leading-tight text-base-content">Come once, with everything.</h2>
-        <p class="mt-5 text-base-content/70 leading-relaxed">Tick off what you have. Not sure about a paper? Bring it anyway. It's easier to set one aside than to wait for one that's missing.</p>
-      </div>
-      <button class="btn btn-outline border-base-300 bg-base-100 print:hidden" onclick="print()">
-        <svg viewBox="0 0 24 24" class="size-4" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M7 9V3h10v6M7 17H5a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-2M7 14h10v7H7z"/></svg>
-        Print this list</button>
-    </div>
-    <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-      <div class="bring-card"><h3 class="bring-h">For everyone</h3><ul class="bring-list"><li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>Photo ID for you and your spouse</span></label></li><li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>Social Security cards or ITIN letters for everyone on the return</span></label></li><li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>Last year's tax return</span></label></li><li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>Bank account and routing number for your refund</span></label></li></ul></div>
-      <div class="bring-card"><h3 class="bring-h">Income</h3><ul class="bring-list"><li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>A W‑2 from every job</span></label></li><li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>1099‑NEC or 1099‑K from apps like Uber, Lyft or DoorDash</span></label></li><li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>1099‑G if you received unemployment</span></label></li><li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>SSA‑1099 or 1099‑R for Social Security or a pension</span></label></li></ul></div>
-      <div class="bring-card"><h3 class="bring-h">Family & home</h3><ul class="bring-list"><li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>Childcare provider's name, address, tax ID and the amount you paid</span></label></li><li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>1098‑T for college tuition</span></label></li><li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>1095‑A if you have insurance from HealthCare.gov</span></label></li><li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>1098 for mortgage interest, and your property tax</span></label></li></ul></div>
-      <div class="bring-card"><h3 class="bring-h">Self‑employed</h3><ul class="bring-list"><li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>Total income from your work or apps</span></label></li><li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>Miles you drove for work</span></label></li><li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>Receipts for supplies, phone and equipment</span></label></li><li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>Any estimated tax payments you made</span></label></li></ul></div>
-    </div>
-    <p class="mt-6 text-sm text-base-content/60">Received a letter from the IRS or the state? Bring that too.</p>
-  </div>
-</section>
-
-<!-- ===== Part V · Trust ===== -->
-<section id="trust" class="mx-auto max-w-6xl px-4 sm:px-6 py-24">
-  <p class="part">Part V · Trust</p>
-  <div class="mt-8 grid lg:grid-cols-12 gap-12">
-    <div class="lg:col-span-5">
-      <h2 class="text-4xl sm:text-[2.75rem] leading-tight text-base-content">Know who's doing your taxes.</h2>
-      <p class="mt-5 text-base-content/70 leading-relaxed">The IRS warns about “ghost preparers”: people who charge to do your taxes, don't sign the return, and disappear when there's a problem. Newcomers and families are common targets. Here's how we work, and the warning signs to watch for anywhere.</p>
-      <a class="mt-6 inline-block text-sm link-quiet" href="https://www.irs.gov/tax-professionals/choosing-a-tax-professional" target="_blank" rel="noopener">IRS guide: how to choose a tax preparer</a>
-    </div>
-    <div class="lg:col-span-7 grid sm:grid-cols-2 gap-px bg-base-300 rounded-box overflow-hidden border border-base-300">
-      <div class="bg-base-100 p-6 sm:p-7">
-        <p class="font-medium text-primary flex items-center gap-2"><svg viewBox="0 0 24 24" class="size-5" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3 4.5 6v5.5c0 4.6 3.2 8.4 7.5 9.5 4.3-1.1 7.5-4.9 7.5-9.5V6L12 3Z"/><path d="m9 12 2 2 4-4"/></svg>Our promises</p>
-        <ul class="mt-5 space-y-3.5 text-sm"><li class="flex gap-3"><svg viewBox="0 0 24 24" class="size-4 mt-0.5 shrink-0 text-success" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg><span>We sign every return we prepare, with our IRS preparer number (PTIN).</span></li><li class="flex gap-3"><svg viewBox="0 0 24 24" class="size-4 mt-0.5 shrink-0 text-success" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg><span>Your refund goes only to your own bank account.</span></li><li class="flex gap-3"><svg viewBox="0 0 24 24" class="size-4 mt-0.5 shrink-0 text-success" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg><span>Our fee is never a percentage of your refund.</span></li><li class="flex gap-3"><svg viewBox="0 0 24 24" class="size-4 mt-0.5 shrink-0 text-success" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg><span>You get a copy of everything you sign.</span></li><li class="flex gap-3"><svg viewBox="0 0 24 24" class="size-4 mt-0.5 shrink-0 text-success" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg><span>We tell you the fee before we start.</span></li></ul>
-      </div>
-      <div class="bg-base-100 p-6 sm:p-7">
-        <p class="font-medium text-error flex items-center gap-2"><svg viewBox="0 0 24 24" class="size-5" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 9v4m0 3.5v.01M10.3 3.9 2.6 17.5A2 2 0 0 0 4.3 20.5h15.4a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/></svg>Warning signs, anywhere</p>
-        <ul class="mt-5 space-y-3.5 text-sm text-base-content/75"><li class="flex gap-3"><svg viewBox="0 0 24 24" class="size-4 mt-0.5 shrink-0 text-error" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg><span>The preparer won't sign the return.</span></li><li class="flex gap-3"><svg viewBox="0 0 24 24" class="size-4 mt-0.5 shrink-0 text-error" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg><span>You're asked to sign a blank or unfinished form.</span></li><li class="flex gap-3"><svg viewBox="0 0 24 24" class="size-4 mt-0.5 shrink-0 text-error" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg><span>A big refund is promised before anyone sees your papers.</span></li><li class="flex gap-3"><svg viewBox="0 0 24 24" class="size-4 mt-0.5 shrink-0 text-error" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg><span>Your refund goes to someone else's account.</span></li><li class="flex gap-3"><svg viewBox="0 0 24 24" class="size-4 mt-0.5 shrink-0 text-error" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg><span>Cash only, and no receipt.</span></li></ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== Part VI · About us ===== -->
-<section id="about" class="border-t border-base-300">
-  <div class="mx-auto max-w-6xl px-4 sm:px-6 py-24">
-    <p class="part">Part VI · About us</p>
+    <p class="part">Part III · About us</p>
     <div class="mt-8 grid lg:grid-cols-12 gap-10 lg:gap-14 items-center">
       <figure class="lg:col-span-5 max-w-sm mx-auto lg:max-w-none w-full">
         <picture>
@@ -303,7 +242,7 @@
 
     <!-- Team -->
     <h3 class="mt-20 eyebrow">Our team</h3>
-    <div class="mt-6 grid sm:grid-cols-[11rem_1fr] gap-6 sm:gap-8 items-center rounded-box border border-base-300 bg-base-200/60 p-5 sm:p-6 max-w-3xl">
+    <div class="mt-6 grid sm:grid-cols-[11rem_1fr] gap-6 sm:gap-8 items-center rounded-box border border-base-300 bg-base-100 p-5 sm:p-6 max-w-3xl">
       <picture>
         <source srcset="assets/nadir.webp" type="image/webp">
         <img src="assets/nadir.jpg" alt="Nadir Abdalla, AtoA team" width="720" height="960" loading="lazy" decoding="async" class="w-40 sm:w-full aspect-[3/4] object-cover rounded-box border border-base-300">
@@ -312,6 +251,67 @@
         <p class="font-display text-xl font-semibold text-base-content">Nadir Abdalla</p>
         <p class="mt-1 text-sm text-secondary">Tax Associate</p>
         <p class="mt-4 text-base-content/70 leading-relaxed">Nadir is from Sudan. He met Kakozi in 2024, was moved by his passion for helping the community, and joined the team. Today he works with our Arabic‑speaking clients, so they can ask every question in their own language.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Part IV · Process ===== -->
+<section id="process" class="mx-auto max-w-6xl px-4 sm:px-6 py-24">
+  <p class="part">Part IV · How it works</p>
+  <div class="mt-8 grid lg:grid-cols-12 gap-8 items-end">
+    <h2 class="lg:col-span-7 text-4xl sm:text-[2.75rem] leading-tight text-base-content">From A to A: from your first document to an accepted return.</h2>
+    <p class="lg:col-span-5 text-base-content/70 leading-relaxed">Five steps, and you'll always know which one you're on.</p>
+  </div>
+  <ol class="mt-14 grid md:grid-cols-5 border-t border-neutral/80">
+    <li class="step-col"><span class="line-no">01</span><h3 class="step-t">Assemble</h3><p class="step-b">Bring your documents. The checklist below shows exactly what you need.</p></li>
+    <li class="step-col"><span class="line-no">02</span><h3 class="step-t">Account</h3><p class="step-b">We check every W‑2, 1099 and receipt, and compare them with last year's return.</p></li>
+    <li class="step-col"><span class="line-no">03</span><h3 class="step-t">Apply</h3><p class="step-b">We apply every deduction and credit you qualify for, and explain the ones you don't.</p></li>
+    <li class="step-col"><span class="line-no">04</span><h3 class="step-t">Approve</h3><p class="step-b">We go through your return line by line, in your language. Nothing is filed until you sign.</p></li>
+    <li class="step-col"><span class="line-no text-accent">05</span><h3 class="step-t text-primary">Accepted</h3><p class="step-b">We e‑file your federal and state returns and send you proof once they're accepted.</p></li>
+  </ol>
+</section>
+
+<!-- ===== Part V · What to bring ===== -->
+<section id="bring" class="bg-base-200/60 border-y border-base-300">
+  <div class="mx-auto max-w-6xl px-4 sm:px-6 py-24">
+    <p class="part">Part V · What to bring</p>
+    <div class="mt-8 flex flex-wrap items-end justify-between gap-6">
+      <div class="max-w-2xl">
+        <h2 class="text-4xl sm:text-[2.75rem] leading-tight text-base-content">Come once, with everything.</h2>
+        <p class="mt-5 text-base-content/70 leading-relaxed">Tick off what you have. Not sure about a paper? Bring it anyway. It's easier to set one aside than to wait for one that's missing.</p>
+      </div>
+      <button class="btn btn-outline border-base-300 bg-base-100 print:hidden" onclick="print()">
+        <svg viewBox="0 0 24 24" class="size-4" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M7 9V3h10v6M7 17H5a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-2M7 14h10v7H7z"/></svg>
+        Print this list</button>
+    </div>
+    <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      <div class="bring-card"><h3 class="bring-h">For everyone</h3><ul class="bring-list"><li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>Photo ID for you and your spouse</span></label></li><li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>Social Security cards or ITIN letters for everyone on the return</span></label></li><li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>Last year's tax return</span></label></li><li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>Bank account and routing number for your refund</span></label></li></ul></div>
+      <div class="bring-card"><h3 class="bring-h">Income</h3><ul class="bring-list"><li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>A W‑2 from every job</span></label></li><li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>1099‑NEC or 1099‑K from apps like Uber, Lyft or DoorDash</span></label></li><li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>1099‑G if you received unemployment</span></label></li><li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>SSA‑1099 or 1099‑R for Social Security or a pension</span></label></li></ul></div>
+      <div class="bring-card"><h3 class="bring-h">Family & home</h3><ul class="bring-list"><li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>Childcare provider's name, address, tax ID and the amount you paid</span></label></li><li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>1098‑T for college tuition</span></label></li><li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>1095‑A if you have insurance from HealthCare.gov</span></label></li><li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>1098 for mortgage interest, and your property tax</span></label></li></ul></div>
+      <div class="bring-card"><h3 class="bring-h">Self‑employed</h3><ul class="bring-list"><li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>Total income from your work or apps</span></label></li><li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>Miles you drove for work</span></label></li><li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>Receipts for supplies, phone and equipment</span></label></li><li><label class="bring-item"><input type="checkbox" class="checkbox checkbox-primary checkbox-sm"><span>Any estimated tax payments you made</span></label></li></ul></div>
+    </div>
+    <p class="mt-6 text-sm text-base-content/60">Received a letter from the IRS or the state? Bring that too.</p>
+  </div>
+</section>
+
+<!-- ===== Part VI · Trust ===== -->
+<section id="trust" class="mx-auto max-w-6xl px-4 sm:px-6 py-24">
+  <p class="part">Part VI · Trust</p>
+  <div class="mt-8 grid lg:grid-cols-12 gap-12">
+    <div class="lg:col-span-5">
+      <h2 class="text-4xl sm:text-[2.75rem] leading-tight text-base-content">Know who's doing your taxes.</h2>
+      <p class="mt-5 text-base-content/70 leading-relaxed">The IRS warns about “ghost preparers”: people who charge to do your taxes, don't sign the return, and disappear when there's a problem. Newcomers and families are common targets. Here's how we work, and the warning signs to watch for anywhere.</p>
+      <a class="mt-6 inline-block text-sm link-quiet" href="https://www.irs.gov/tax-professionals/choosing-a-tax-professional" target="_blank" rel="noopener">IRS guide: how to choose a tax preparer</a>
+    </div>
+    <div class="lg:col-span-7 grid sm:grid-cols-2 gap-px bg-base-300 rounded-box overflow-hidden border border-base-300">
+      <div class="bg-base-100 p-6 sm:p-7">
+        <p class="font-medium text-primary flex items-center gap-2"><svg viewBox="0 0 24 24" class="size-5" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3 4.5 6v5.5c0 4.6 3.2 8.4 7.5 9.5 4.3-1.1 7.5-4.9 7.5-9.5V6L12 3Z"/><path d="m9 12 2 2 4-4"/></svg>Our promises</p>
+        <ul class="mt-5 space-y-3.5 text-sm"><li class="flex gap-3"><svg viewBox="0 0 24 24" class="size-4 mt-0.5 shrink-0 text-success" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg><span>We sign every return we prepare, with our IRS preparer number (PTIN).</span></li><li class="flex gap-3"><svg viewBox="0 0 24 24" class="size-4 mt-0.5 shrink-0 text-success" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg><span>Your refund goes only to your own bank account.</span></li><li class="flex gap-3"><svg viewBox="0 0 24 24" class="size-4 mt-0.5 shrink-0 text-success" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg><span>Our fee is never a percentage of your refund.</span></li><li class="flex gap-3"><svg viewBox="0 0 24 24" class="size-4 mt-0.5 shrink-0 text-success" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg><span>You get a copy of everything you sign.</span></li><li class="flex gap-3"><svg viewBox="0 0 24 24" class="size-4 mt-0.5 shrink-0 text-success" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg><span>We tell you the fee before we start.</span></li></ul>
+      </div>
+      <div class="bg-base-100 p-6 sm:p-7">
+        <p class="font-medium text-error flex items-center gap-2"><svg viewBox="0 0 24 24" class="size-5" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 9v4m0 3.5v.01M10.3 3.9 2.6 17.5A2 2 0 0 0 4.3 20.5h15.4a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/></svg>Warning signs, anywhere</p>
+        <ul class="mt-5 space-y-3.5 text-sm text-base-content/75"><li class="flex gap-3"><svg viewBox="0 0 24 24" class="size-4 mt-0.5 shrink-0 text-error" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg><span>The preparer won't sign the return.</span></li><li class="flex gap-3"><svg viewBox="0 0 24 24" class="size-4 mt-0.5 shrink-0 text-error" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg><span>You're asked to sign a blank or unfinished form.</span></li><li class="flex gap-3"><svg viewBox="0 0 24 24" class="size-4 mt-0.5 shrink-0 text-error" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg><span>A big refund is promised before anyone sees your papers.</span></li><li class="flex gap-3"><svg viewBox="0 0 24 24" class="size-4 mt-0.5 shrink-0 text-error" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg><span>Your refund goes to someone else's account.</span></li><li class="flex gap-3"><svg viewBox="0 0 24 24" class="size-4 mt-0.5 shrink-0 text-error" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg><span>Cash only, and no receipt.</span></li></ul>
       </div>
     </div>
   </div>

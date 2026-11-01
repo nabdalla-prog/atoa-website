@@ -65,7 +65,7 @@
   "l_body": "Les impôts sont déjà difficiles dans sa langue maternelle. AtoA est le cabinet où les personnes qui parlent arabe, swahili, français ou anglais parlent directement avec celui qui prépare leur déclaration. Pas besoin d'interprète.",
   "l_note": "Les membres de votre famille sont les bienvenus. Nous expliquons tout à la personne qui signe, dans la langue de son choix.",
 
-  "p_part": "Partie III · Comment ça marche",
+  "p_part": "Partie IV · Comment ça marche",
   "p_title": "De A à A : du premier document à la déclaration acceptée.",
   "p_body": "Cinq étapes, et vous savez toujours où vous en êtes.",
   "p1": "Apportez vos documents. La liste ci‑dessous indique exactement ce qu'il faut.",
@@ -74,7 +74,7 @@
   "p4": "Nous parcourons votre déclaration ligne par ligne, dans votre langue. Rien n'est envoyé avant votre signature.",
   "p5": "Nous télédéclarons au fédéral et à l'État, et vous envoyons la preuve dès qu'elles sont acceptées.",
 
-  "b_part": "Partie IV · Quoi apporter",
+  "b_part": "Partie V · Quoi apporter",
   "b_title": "Venez une fois, avec tout.",
   "b_body": "Cochez ce que vous avez. Pas sûr pour un papier ? Apportez‑le quand même. Il est plus facile d'en mettre un de côté que d'attendre celui qui manque.",
   "b_print": "Imprimer la liste",
@@ -88,7 +88,7 @@
   "b4_items": ["Revenu total de votre activité ou des applications", "Les kilomètres parcourus pour le travail", "Reçus de fournitures, téléphone et équipement", "Les acomptes d'impôt déjà payés"],
   "b_note": "Vous avez reçu une lettre de l'IRS ou de l'État ? Apportez‑la aussi.",
 
-  "t_part": "Partie V · Confiance",
+  "t_part": "Partie VI · Confiance",
   "t_title": "Sachez qui prépare vos impôts.",
   "t_body": "L'IRS met en garde contre les « préparateurs fantômes » : des personnes qui se font payer pour vos impôts, ne signent pas la déclaration et disparaissent en cas de problème. Les nouveaux arrivants et les familles sont souvent visés. Voici comment nous travaillons, et les signaux d'alerte à surveiller partout.",
   "t_link": "Guide de l'IRS : bien choisir son préparateur",
@@ -97,7 +97,7 @@
   "t_warn_h": "Signaux d'alerte, partout",
   "t_warnings": ["Le préparateur refuse de signer la déclaration.", "On vous demande de signer un formulaire vide ou incomplet.", "Un gros remboursement est promis avant de voir vos papiers.", "Votre remboursement va sur le compte de quelqu'un d'autre.", "Paiement en espèces uniquement, sans reçu."],
 
-  "a_part": "Partie VI · Qui sommes‑nous",
+  "a_part": "Partie III · Qui sommes‑nous",
   "a_title": "Voici notre fondateur, Kakozi Elangi.",
   "a_body1": "Kakozi Elangi est originaire du Congo et parle six langues : swahili, lingala, français, anglais, kirundi et kinyarwanda. Il a fondé AtoA en 2003 pour offrir aux familles une aide fiscale honnête et soignée, dans une langue qu'elles comprennent.",
   "a_body2": "Il a à cœur d'élever la communauté africaine et de défendre ses intérêts. Il croit que l'unité est ce qui nous mène vers un avenir meilleur, et que cela commence par des voisins qui s'aident à comprendre le système dans lequel ils vivent.",
