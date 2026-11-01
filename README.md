@@ -9,9 +9,11 @@ A static website built the Lafiglow way (plain HTML, a booking popup that sends 
 | `sw/index.html` | Swahili |
 | `fr/index.html` | French |
 
+Each language folder also has a `privacy.html` page, built from `src/privacy.html`.
+
 ## How it's put together
 
-- **Edit `src/page.html`** (the layout) and **`src/i18n/<lang>.json`** (the words). Never edit the built `index.html` files by hand.
+- **Edit `src/page.html`** and `src/privacy.html` (the layouts; the shared `<head>` and footer are in `src/partials/`) and **`src/i18n/<lang>.json`** (the words). Never edit the built `index.html` files by hand.
 - `node build.mjs` builds all four pages and `assets/site.css` (Tailwind 4 + DaisyUI 5). `node build.mjs --watch` rebuilds every time you save.
 - `node_modules` is AtoA's own copy of the build tools (DaisyUI 5.7.46, Tailwind 4.3.3, PostCSS). It's separate from every other project and is not committed (`.gitignore`). On a new computer, run `npm install`.
 - `og.jpg` (the preview picture shown when the site is shared on WhatsApp or Facebook) is a screenshot of `src/og.html` at 1200×630: `chromium --headless --window-size=1200,630 --screenshot=og.png src/og.html`. After changing it, bump `?v=` next to `og_image` in `build.mjs`.

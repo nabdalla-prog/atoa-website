@@ -2,6 +2,7 @@
 <!-- Built from src/page.html by build.mjs: edit the template, not this file. -->
 <html lang="en" dir="ltr" data-theme="atoa">
 <head>
+<!-- Shared <head> for every page; build.mjs inserts it where a template says {{>head}} -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>AtoA · Tax Preparation in English, Arabic, Swahili &amp; French · All 50 States</title>
@@ -34,6 +35,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@500;600;700&family=Cairo:wght@600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="assets/site.css">
+
 
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"AccountingService","name":"AtoA","url":"https://atoafulltaxservices.com/","description":"Personal, family and small-business tax preparation for all 50 states, in English, Arabic, Swahili and French, from our office in Rock Island, Illinois. Federal and state returns, ITIN help and IRS letters.","knowsLanguage":["en","ar","sw","fr"],"telephone":"+13097218006","email":"hello@atoafulltaxservices.com","address":{"@type":"PostalAddress","streetAddress":"823 20th St","addressLocality":"Rock Island","addressRegion":"IL","postalCode":"61201","addressCountry":"US"},"areaServed":{"@type":"Country","name":"United States"}}</script>
 </head>
@@ -417,10 +419,11 @@
     <div class="flex items-center text-xs border border-base-300 rounded-field overflow-hidden self-start md:self-auto"><a href="index.html" hreflang="en" lang="en" title="English" aria-current="page" class="lang-link is-on">EN</a><a href="ar/index.html" hreflang="ar" lang="ar" title="العربية" class="lang-link font-arabic">عربي</a><a href="sw/index.html" hreflang="sw" lang="sw" title="Kiswahili" class="lang-link">SW</a><a href="fr/index.html" hreflang="fr" lang="fr" title="Français" class="lang-link">FR</a></div>
   </div>
   <div class="mx-auto max-w-6xl px-4 sm:px-6 py-6 border-t border-base-300 flex flex-col sm:flex-row justify-between gap-2 text-xs text-base-content/50">
-    <p>© <span data-year>2026</span> AtoA. Not affiliated with the IRS or any state tax agency.</p>
+    <p>© <span data-year>2026</span> AtoA. Not affiliated with the IRS or any state tax agency. · <a href="privacy.html" class="link-quiet">Privacy</a></p>
     <p>This site is general information, not tax advice for your situation.</p>
   </div>
 </footer>
+
 
 <!-- ===== Booking: choose → reach us by WhatsApp, phone or email → the checklist (no online calendar for now) ===== -->
 <dialog id="booker" class="modal modal-bottom sm:modal-middle">

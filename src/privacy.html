@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- Template: build.mjs fills {{keys}} from src/i18n/<lang>.json and writes one privacy page per language. Edit here, not in the built pages. -->
+<html lang="{{lang}}" dir="{{dir}}" data-theme="atoa">
+<head>
+{{>head}}
+</head>
+<body class="bg-base-100 text-base-content">
+
+<header class="border-b border-base-300">
+  <nav class="mx-auto max-w-6xl px-4 sm:px-6 h-16 flex items-center justify-between gap-4" aria-label="{{nav_label}}">
+    <a href="./" dir="ltr" class="logo text-[1.75rem]" aria-label="AtoA">{{logo_mark}}<span>Ato<span class="logo-a">A</span></span></a>
+    <div class="flex items-center text-xs border border-base-300 rounded-field overflow-hidden">{{lang_switch}}</div>
+  </nav>
+</header>
+
+<main id="main" class="mx-auto max-w-2xl px-4 sm:px-6 py-16 sm:py-20">
+  <a href="./" class="text-sm link-quiet inline-flex items-center gap-1.5"><svg viewBox="0 0 24 24" class="size-4 rtl:-scale-x-100" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6"/></svg>{{pv_back}}</a>
+  <h1 class="mt-8 text-4xl sm:text-5xl leading-tight text-base-content">{{pv_title}}</h1>
+  <p class="mt-3 text-sm text-base-content/55">{{pv_updated}}</p>
+  <p class="mt-8 text-lg text-base-content/75 leading-relaxed">{{pv_intro}}</p>
+  {{pv_body}}
+  <div class="mt-12 rounded-box border border-base-300 bg-base-200/60 p-6">
+    <h2 class="text-xl text-base-content">{{pv_contact_h}}</h2>
+    <p class="mt-2 text-base-content/70 leading-relaxed">{{pv_contact_p}}</p>
+    <p dir="ltr" class="mt-3 text-start text-sm">{{contact_line}}</p>
+  </div>
+</main>
+
+{{>footer}}
+
+<script>
+  document.querySelectorAll("[data-year]").forEach(el => el.textContent = new Date().getFullYear());
+</script>
+</body>
+</html>

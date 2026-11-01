@@ -28,4 +28,32 @@
     <xhtml:link rel="alternate" hreflang="sw" href="https://atoafulltaxservices.com/sw/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://atoafulltaxservices.com/fr/"/>
   </url>
+  <url>
+    <loc>https://atoafulltaxservices.com/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://atoafulltaxservices.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://atoafulltaxservices.com/ar/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://atoafulltaxservices.com/sw/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://atoafulltaxservices.com/fr/privacy.html"/>
+  </url>
+  <url>
+    <loc>https://atoafulltaxservices.com/ar/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://atoafulltaxservices.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://atoafulltaxservices.com/ar/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://atoafulltaxservices.com/sw/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://atoafulltaxservices.com/fr/privacy.html"/>
+  </url>
+  <url>
+    <loc>https://atoafulltaxservices.com/sw/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://atoafulltaxservices.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://atoafulltaxservices.com/ar/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://atoafulltaxservices.com/sw/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://atoafulltaxservices.com/fr/privacy.html"/>
+  </url>
+  <url>
+    <loc>https://atoafulltaxservices.com/fr/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://atoafulltaxservices.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://atoafulltaxservices.com/ar/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://atoafulltaxservices.com/sw/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://atoafulltaxservices.com/fr/privacy.html"/>
+  </url>
 </urlset>
