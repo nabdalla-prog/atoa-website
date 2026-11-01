@@ -9,7 +9,7 @@
   "nav_languages": "Nos langues",
   "nav_bring": "Quoi apporter",
   "nav_deadlines": "Échéances",
-  "nav_faq": "Questions",
+  "nav_faq": "Questions", "nav_about": "À propos",
   "theme_toggle": "Mode clair / sombre",
   "cta_short": "Rendez‑vous",
 
@@ -97,7 +97,16 @@
   "t_warn_h": "Signaux d'alerte, partout",
   "t_warnings": ["Le préparateur refuse de signer la déclaration.", "On vous demande de signer un formulaire vide ou incomplet.", "Un gros remboursement est promis avant de voir vos papiers.", "Votre remboursement va sur le compte de quelqu'un d'autre.", "Paiement en espèces uniquement, sans reçu."],
 
-  "d_part": "Partie VI · Échéances",
+  "a_part": "Partie VI · Qui sommes‑nous",
+  "a_title": "Voici notre fondateur, Kakozi Elangi.",
+  "a_body1": "Kakozi Elangi est originaire du Congo et parle sept langues. Il a fondé AtoA en 2003 pour offrir aux familles une aide fiscale honnête et soignée, dans une langue qu'elles comprennent.",
+  "a_body2": "Il a à cœur d'élever la communauté africaine et de défendre ses intérêts. Il croit que l'unité est ce qui nous mène vers un avenir meilleur, et que cela commence par des voisins qui s'aident à comprendre le système dans lequel ils vivent.",
+  "a_quote": "L'unité est ce qui nous mène vers un avenir meilleur.",
+  "a_role": "Fondateur, AtoA",
+  "a_stat1_label": "Année de fondation",
+  "a_stat2_label": "Langues parlées",
+  "a_alt": "Kakozi Elangi, fondateur d'AtoA",
+  "d_part": "Partie VII · Échéances",
   "d_title": "Dates clés pour vos impôts 2026.",
   "d_body": "Manquer une date peut coûter des pénalités. Si vous êtes en retard, appelez‑nous tôt : une prolongation peut souvent aider.",
   "d_next": "Prochaine échéance :",
@@ -112,7 +121,7 @@
   "d6": "Troisième acompte d'impôt 2027",
   "d7": "Déclarations fédérales prolongées",
 
-  "f_part": "Partie VII · Questions",
+  "f_part": "Partie VIII · Questions",
   "f_title": "Ce qu'on nous demande en premier.",
   "faq_items": [
     ["Faut‑il parler anglais ?", "Non. Tout le rendez‑vous peut se faire en français, arabe, swahili ou anglais. Les formulaires sont en anglais, comme l'exige l'IRS, mais nous vous expliquons chaque ligne dans votre langue."],

@@ -9,7 +9,7 @@
   "nav_languages": "Languages",
   "nav_bring": "What to bring",
   "nav_deadlines": "Deadlines",
-  "nav_faq": "FAQ",
+  "nav_faq": "FAQ", "nav_about": "About",
   "theme_toggle": "Switch light / dark",
   "cta_short": "Book",
 
@@ -97,7 +97,16 @@
   "t_warn_h": "Warning signs, anywhere",
   "t_warnings": ["The preparer won't sign the return.", "You're asked to sign a blank or unfinished form.", "A big refund is promised before anyone sees your papers.", "Your refund goes to someone else's account.", "Cash only, and no receipt."],
 
-  "d_part": "Part VI · Deadlines",
+  "a_part": "Part VI · About us",
+  "a_title": "Meet our founder, Kakozi Elangi.",
+  "a_body1": "Kakozi Elangi is from Congo and speaks seven languages. He founded AtoA in 2003 to give families honest, careful tax help in a language they understand.",
+  "a_body2": "He is passionate about lifting up the African community and speaking up for it. He believes unity is what takes us to a better future, and that it starts with neighbors helping each other understand the system they live in.",
+  "a_quote": "Unity is what takes us to a better future.",
+  "a_role": "Founder, AtoA",
+  "a_stat1_label": "Year founded",
+  "a_stat2_label": "Languages he speaks",
+  "a_alt": "Kakozi Elangi, founder of AtoA",
+  "d_part": "Part VII · Deadlines",
   "d_title": "Key dates for your 2026 taxes.",
   "d_body": "Missing a date can mean penalties. If you're running late, call us early: an extension can often help.",
   "d_next": "Next up:",
@@ -112,7 +121,7 @@
   "d6": "Third 2027 estimated tax payment",
   "d7": "Extended federal returns due",
 
-  "f_part": "Part VII · Questions",
+  "f_part": "Part VIII · Questions",
   "f_title": "What people ask us first.",
   "faq_items": [
     ["Do I need to speak English?", "No. You can do the whole appointment in Arabic, Swahili, French or English. The forms are in English, as the IRS requires, but we explain every line in your language."],

@@ -9,7 +9,7 @@
   "nav_languages": "Lugha zetu",
   "nav_bring": "Ulete nini",
   "nav_deadlines": "Tarehe muhimu",
-  "nav_faq": "Maswali",
+  "nav_faq": "Maswali", "nav_about": "Kuhusu",
   "theme_toggle": "Badilisha mwanga / giza",
   "cta_short": "Panga miadi",
 
@@ -97,7 +97,16 @@
   "t_warn_h": "Dalili za hatari, popote",
   "t_warnings": ["Mwandaaji anakataa kusaini fomu.", "Unaombwa kusaini fomu tupu au isiyokamilika.", "Unaahidiwa pesa nyingi za kurudishiwa kabla hata karatasi zako hazijaonekana.", "Pesa zako zinaingia kwenye akaunti ya mtu mwingine.", "Malipo ya pesa taslimu tu, bila risiti."],
 
-  "d_part": "Sehemu VI · Tarehe muhimu",
+  "a_part": "Sehemu VI · Kuhusu sisi",
+  "a_title": "Mfahamu mwanzilishi wetu, Kakozi Elangi.",
+  "a_body1": "Kakozi Elangi anatoka Kongo na anazungumza lugha saba. Alianzisha AtoA mwaka 2003 ili kuzipa familia msaada wa kodi wa kweli na makini, kwa lugha wanayoielewa.",
+  "a_body2": "Ana shauku ya kuinua jamii ya Kiafrika na kuitetea. Anaamini kwamba umoja ndio unaotufikisha kwenye maisha bora ya baadaye, na kwamba hilo linaanza na majirani kusaidiana kuelewa mfumo wanaoishi ndani yake.",
+  "a_quote": "Umoja ndio unaotufikisha kwenye maisha bora ya baadaye.",
+  "a_role": "Mwanzilishi, AtoA",
+  "a_stat1_label": "Mwaka ilipoanzishwa",
+  "a_stat2_label": "Lugha anazozungumza",
+  "a_alt": "Kakozi Elangi, mwanzilishi wa AtoA",
+  "d_part": "Sehemu VII · Tarehe muhimu",
   "d_title": "Tarehe muhimu za kodi za 2026.",
   "d_body": "Kukosa tarehe kunaweza kuleta faini. Ukiwa umechelewa, tupigie simu mapema: kuongezewa muda mara nyingi husaidia.",
   "d_next": "Inayofuata:",
@@ -112,7 +121,7 @@
   "d6": "Malipo ya tatu ya kodi ya makadirio ya 2027",
   "d7": "Fomu za serikali kuu zilizoongezewa muda",
 
-  "f_part": "Sehemu VII · Maswali",
+  "f_part": "Sehemu VIII · Maswali",
   "f_title": "Maswali tunayoulizwa kwanza.",
   "faq_items": [
     ["Je, ni lazima nizungumze Kiingereza?", "Hapana. Miadi yote inaweza kufanyika kwa Kiswahili, Kiarabu, Kifaransa au Kiingereza. Fomu ziko kwa Kiingereza kama IRS inavyotaka, lakini tunakueleza kila mstari kwa lugha yako."],
