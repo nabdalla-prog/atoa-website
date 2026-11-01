@@ -74,7 +74,7 @@ async function buildPage(page) {
       alternates: page.only ? "" : [...Object.entries(LANGS).map(([c, x]) => `<link rel="alternate" hreflang="${c}" href="${SITE + x.path + page.url}">`),
         `<link rel="alternate" hreflang="x-default" href="${SITE + page.url}">`].join("\n"),
       jsonld: JSON.stringify({
-        "@context": "https://schema.org", "@type": "AccountingService", name: "AtoA", url: SITE + l.path,
+        "@context": "https://schema.org", "@type": "AccountingService", name: "AtoA Full Tax Services", legalName: "AtoA Full Tax Services LLC", alternateName: "AtoA", url: SITE + l.path,
         description: t.meta_description, knowsLanguage: ["en", "ar", "sw", "fr", "ln", "rn", "rw"],
         foundingDate: "2003", logo: SITE + "assets/logo-mark.png", image: [SITE + "og.jpg", SITE + "assets/founder.jpg"],
         founder: { "@type": "Person", name: "Kakozi Elangi", jobTitle: "Founder", image: SITE + "assets/founder.jpg" },
