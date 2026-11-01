@@ -10,7 +10,7 @@ import tailwind from "@tailwindcss/postcss";
 // ===== Settings: replace these before launch =====
 const SITE = "https://atoafulltaxservices.com/";
 const PHONE = "3097218006"; // 10 digits, used for both the phone line and WhatsApp
-const EMAIL = "kakoziodile@gmail.com";
+const EMAIL = "hello@atoafulltaxservices.com";
 const ADDRESS = { street: "823 20th St", city: "Rock Island", region: "IL", zip: "61201" };
 const WHATSAPP = `https://wa.me/1${PHONE || "0000000000"}`;
 const PHONE_SHOWN = PHONE ? `(${PHONE.slice(0, 3)}) ${PHONE.slice(3, 6)}‑${PHONE.slice(6)}` : "";
