@@ -1,6 +1,6 @@
 {
-  "meta_title": "AtoA · Tax Preparation in English, Arabic, Swahili & French · Quad Cities",
-  "meta_description": "Personal, family and small-business tax preparation in the Quad Cities, in English, Arabic, Swahili and French. Iowa and Illinois returns, ITIN help and IRS letters.",
+  "meta_title": "AtoA · Tax Preparation in English, Arabic, Swahili & French · All 50 States",
+  "meta_description": "Personal, family and small-business tax preparation for all 50 states, in English, Arabic, Swahili and French, from our office in Rock Island, Illinois. Federal and state returns, ITIN help and IRS letters.",
   "skip": "Skip to content",
   "nav_label": "Main",
   "menu": "Menu",
@@ -13,7 +13,7 @@
   "theme_toggle": "Switch light / dark",
   "cta_short": "Book",
 
-  "hero_eyebrow": "Tax preparation · Quad Cities · Iowa & Illinois",
+  "hero_eyebrow": "Tax preparation · All 50 states · Office in Rock Island, IL",
   "hero_title": "Your taxes, explained in <em>your</em> language.",
   "hero_body": "AtoA prepares personal, family and small‑business tax returns in English, Arabic, Swahili and French. Sit down with someone who speaks your language, understand every line before you sign, and leave knowing what comes next.",
   "hero_cta": "Book an appointment",
@@ -37,7 +37,7 @@
   "step5": "Accepted",
 
   "fact1": "4", "fact1_label": "Languages spoken",
-  "fact2": "IA + IL", "fact2_label": "Both state returns",
+  "fact2": "50", "fact2_label": "States we file for",
   "fact3": "Year‑round", "fact3_label": "Help after April too",
   "fact4": "In person", "fact4_label": "Or by phone and video",
 
@@ -47,8 +47,8 @@
   "s_cta": "Ask about your situation",
   "svc1_t": "Personal & family returns",
   "svc1_b": "Federal and state returns for workers, families, students and retirees, with every credit you qualify for: child tax credit, earned income credit, education credits.",
-  "svc2_t": "Live in Illinois, work in Iowa (or the reverse)",
-  "svc2_b": "The two states have an agreement for wages. We make sure only one state taxes your paycheck, and get back tax that the wrong state withheld.",
+  "svc2_t": "Moved, or work in another state",
+  "svc2_b": "Lived or worked in more than one state this year? We file each state return correctly so you aren't taxed twice. For example, Iowa and Illinois have a wage agreement: only the state you live in taxes your paycheck.",
   "svc3_t": "Self‑employed & gig work",
   "svc3_b": "Rideshare and delivery drivers, truckers, home daycare, cleaning, hair and beauty. We count your mileage and expenses so you pay tax on your profit, not on everything the app reports.",
   "svc4_t": "ITIN applications",
@@ -62,7 +62,7 @@
 
   "l_part": "Part II · Our languages",
   "l_title": "Four languages, and nothing lost in translation.",
-  "l_body": "Taxes are hard enough in your first language. AtoA is the Quad Cities tax office where Arabic, Swahili, French and English speakers talk directly with the person preparing their return. No interpreter needed.",
+  "l_body": "Taxes are hard enough in your first language. AtoA is a tax office where Arabic, Swahili, French and English speakers talk directly with the person preparing their return. No interpreter needed.",
   "l_note": "Family members are welcome to come with you. We explain everything to the person signing, in the language they choose.",
 
   "p_part": "Part III · How it works",
@@ -106,8 +106,8 @@
   "d_col_in": "In",
   "d1": "Last 2026 estimated tax payment (self‑employed)",
   "d2": "Employers must send W‑2s and 1099s by today",
-  "d3": "Federal and Illinois returns due, or ask for an extension",
-  "d4": "Iowa returns due",
+  "d3": "Federal and most state returns due, or ask for an extension",
+  "d4": "Iowa returns due (a few states have later dates)",
   "d5": "Second 2027 estimated tax payment",
   "d6": "Third 2027 estimated tax payment",
   "d7": "Extended federal returns due",
@@ -116,6 +116,7 @@
   "f_title": "What people ask us first.",
   "faq_items": [
     ["Do I need to speak English?", "No. You can do the whole appointment in Arabic, Swahili, French or English. The forms are in English, as the IRS requires, but we explain every line in your language."],
+    ["I don't live near Rock Island. Can you still do my taxes?", "Yes. We prepare federal returns and state returns for all 50 states. We meet by phone or video, you send your documents securely, and you sign electronically. Same language, same care as in the office."],
     ["I live in Illinois and work in Iowa. Do I file two state returns?", "Usually just one. Iowa and Illinois have an agreement that taxes wages only in the state where you live. If the wrong state took tax from your paycheck, we file to get it back and show you how to fix it with your employer."],
     ["My spouse or child doesn't have a Social Security number.", "They may be able to get an ITIN, a tax number from the IRS. We can help with the application (Form W‑7) and send it with your return. We'll explain how to send your ID documents to the IRS (originals or certified copies) or where to have them checked in person."],
     ["I drive for Uber, Lyft or DoorDash. What do I need?", "The yearly summary from each app and a record of the miles you drove for work. Mileage often lowers your tax a lot, so even a rough record helps."],
@@ -126,10 +127,11 @@
 
   "c_eyebrow": "Book your appointment",
   "c_title": "Sit down with someone who speaks your language.",
-  "c_area": "Serving families on both sides of the river:",
+  "c_area": "Our office is in Rock Island, Illinois. We prepare returns for:",
+  "c_states": "All 50 states", "c_remote": "Come in person, or meet us by phone or video from anywhere in the U.S.",
   "c_hours": "Tax season (mid‑January to April 15): Monday–Saturday, 9 AM – 5 PM · Rest of the year: by appointment",
 
-  "footer_tag": "Tax preparation in English, Arabic, Swahili and French for the Quad Cities.",
+  "footer_tag": "Tax preparation in English, Arabic, Swahili and French, for all 50 states.",
   "footer_irs": "Not affiliated with the IRS or any state tax agency.",
   "footer_advice": "This site is general information, not tax advice for your situation.",
 

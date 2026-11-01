@@ -54,7 +54,7 @@ async function buildPages() {
         description: t.meta_description, knowsLanguage: ["en", "ar", "sw", "fr"],
         ...(PHONE && { telephone: "+1" + PHONE }), email: EMAIL,
         address: { "@type": "PostalAddress", streetAddress: ADDRESS.street, addressLocality: ADDRESS.city, addressRegion: ADDRESS.region, postalCode: ADDRESS.zip, addressCountry: "US" },
-        areaServed: ["Davenport, IA", "Bettendorf, IA", "Moline, IL", "Rock Island, IL", "East Moline, IL"].map(name => ({ "@type": "City", name })),
+        areaServed: { "@type": "Country", name: "United States" },
       }),
       lang_switch: langSwitch(code, root, "lang-link"),
       whatsapp: `${WHATSAPP}?text=${encodeURIComponent(t.wa_text)}`,

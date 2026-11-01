@@ -1,6 +1,6 @@
 {
-  "meta_title": "AtoA · Préparation d'impôts en français, arabe, swahili et anglais · Quad Cities",
-  "meta_description": "Préparation des déclarations d'impôts pour particuliers, familles et petites entreprises dans les Quad Cities, en français, arabe, swahili et anglais. Iowa et Illinois, aide ITIN et courriers de l'IRS.",
+  "meta_title": "AtoA · Préparation d'impôts en français, arabe, swahili et anglais · Les 50 États",
+  "meta_description": "Préparation des déclarations d'impôts pour particuliers, familles et petites entreprises dans les 50 États, en français, arabe, swahili et anglais, depuis notre bureau de Rock Island, Illinois. Déclarations fédérales et d'États, aide ITIN et courriers de l'IRS.",
   "skip": "Aller au contenu",
   "nav_label": "Menu principal",
   "menu": "Menu",
@@ -13,7 +13,7 @@
   "theme_toggle": "Mode clair / sombre",
   "cta_short": "Rendez‑vous",
 
-  "hero_eyebrow": "Préparation d'impôts · Quad Cities · Iowa et Illinois",
+  "hero_eyebrow": "Préparation d'impôts · Les 50 États · Bureau à Rock Island, IL",
   "hero_title": "Vos impôts, expliqués dans <em>votre</em> langue.",
   "hero_body": "AtoA prépare les déclarations d'impôts des particuliers, des familles et des petites entreprises en français, arabe, swahili et anglais. Asseyez‑vous avec quelqu'un qui parle votre langue, comprenez chaque ligne avant de signer, et repartez en sachant ce qui vient ensuite.",
   "hero_cta": "Prendre rendez‑vous",
@@ -37,7 +37,7 @@
   "step5": "Acceptée",
 
   "fact1": "4", "fact1_label": "Langues parlées",
-  "fact2": "IA + IL", "fact2_label": "Les deux États",
+  "fact2": "50", "fact2_label": "États couverts",
   "fact3": "Toute l'année", "fact3_label": "Aussi après avril",
   "fact4": "En personne", "fact4_label": "Ou par téléphone et vidéo",
 
@@ -47,8 +47,8 @@
   "s_cta": "Parlez‑nous de votre situation",
   "svc1_t": "Déclarations individuelles et familiales",
   "svc1_b": "Déclarations fédérales et d'État pour salariés, familles, étudiants et retraités, avec tous les crédits auxquels vous avez droit : crédit pour enfants, crédit sur les revenus du travail (EITC), crédits d'études.",
-  "svc2_t": "Vous vivez en Illinois et travaillez en Iowa (ou l'inverse)",
-  "svc2_b": "Les deux États ont un accord sur les salaires. Nous veillons à ce qu'un seul État impose votre salaire, et nous récupérons l'impôt retenu par le mauvais État.",
+  "svc2_t": "Vous avez déménagé ou travaillez dans un autre État",
+  "svc2_b": "Vous avez vécu ou travaillé dans plus d'un État cette année ? Nous préparons correctement chaque déclaration d'État pour que vous ne soyez pas imposé deux fois. Par exemple, l'Iowa et l'Illinois ont un accord : seul l'État où vous vivez impose votre salaire.",
   "svc3_t": "Travailleurs indépendants et plateformes",
   "svc3_b": "Chauffeurs VTC et livreurs, routiers, garde d'enfants à domicile, ménage, coiffure et beauté. Nous comptons vos kilomètres et vos dépenses pour que vous payiez l'impôt sur votre bénéfice, pas sur tout ce que l'application déclare.",
   "svc4_t": "Demandes d'ITIN",
@@ -62,7 +62,7 @@
 
   "l_part": "Partie II · Nos langues",
   "l_title": "Quatre langues, et rien ne se perd dans la traduction.",
-  "l_body": "Les impôts sont déjà difficiles dans sa langue maternelle. AtoA est le cabinet des Quad Cities où les personnes qui parlent arabe, swahili, français ou anglais parlent directement avec celui qui prépare leur déclaration. Pas besoin d'interprète.",
+  "l_body": "Les impôts sont déjà difficiles dans sa langue maternelle. AtoA est le cabinet où les personnes qui parlent arabe, swahili, français ou anglais parlent directement avec celui qui prépare leur déclaration. Pas besoin d'interprète.",
   "l_note": "Les membres de votre famille sont les bienvenus. Nous expliquons tout à la personne qui signe, dans la langue de son choix.",
 
   "p_part": "Partie III · Comment ça marche",
@@ -106,8 +106,8 @@
   "d_col_in": "Dans",
   "d1": "Dernier acompte d'impôt 2026 (indépendants)",
   "d2": "Les employeurs doivent avoir envoyé les W‑2 et 1099",
-  "d3": "Déclarations fédérale et Illinois, ou demande de prolongation",
-  "d4": "Déclarations de l'Iowa",
+  "d3": "Déclarations fédérale et de la plupart des États, ou demande de prolongation",
+  "d4": "Déclarations de l'Iowa (quelques États ont des dates plus tardives)",
   "d5": "Deuxième acompte d'impôt 2027",
   "d6": "Troisième acompte d'impôt 2027",
   "d7": "Déclarations fédérales prolongées",
@@ -116,6 +116,7 @@
   "f_title": "Ce qu'on nous demande en premier.",
   "faq_items": [
     ["Faut‑il parler anglais ?", "Non. Tout le rendez‑vous peut se faire en français, arabe, swahili ou anglais. Les formulaires sont en anglais, comme l'exige l'IRS, mais nous vous expliquons chaque ligne dans votre langue."],
+    ["Je n'habite pas près de Rock Island. Pouvez‑vous quand même faire mes impôts ?", "Oui. Nous préparons les déclarations fédérales et celles des 50 États. Nous nous rencontrons par téléphone ou vidéo, vous envoyez vos documents en toute sécurité et vous signez électroniquement. Même langue, même attention qu'au bureau."],
     ["J'habite en Illinois et je travaille en Iowa. Dois‑je faire deux déclarations d'État ?", "En général, une seule. L'Iowa et l'Illinois ont un accord qui impose les salaires uniquement dans l'État où vous habitez. Si le mauvais État a retenu de l'impôt sur votre salaire, nous faisons le nécessaire pour le récupérer et vous montrons comment corriger cela avec votre employeur."],
     ["Mon conjoint ou mon enfant n'a pas de numéro de sécurité sociale.", "Il peut peut‑être obtenir un ITIN, un numéro fiscal délivré par l'IRS. Nous vous aidons avec la demande (formulaire W‑7) et l'envoyons avec votre déclaration. Nous vous expliquons comment envoyer vos pièces d'identité à l'IRS (originaux ou copies certifiées par l'organisme émetteur) ou où les faire vérifier en personne."],
     ["Je conduis pour Uber, Lyft ou DoorDash. De quoi ai‑je besoin ?", "Le récapitulatif annuel de chaque application et un relevé des kilomètres parcourus pour le travail. Le kilométrage réduit souvent beaucoup l'impôt, donc même un relevé approximatif aide."],
@@ -126,10 +127,11 @@
 
   "c_eyebrow": "Prenez rendez‑vous",
   "c_title": "Asseyez‑vous avec quelqu'un qui parle votre langue.",
-  "c_area": "Au service des familles des deux côtés du fleuve :",
+  "c_area": "Notre bureau est à Rock Island, Illinois. Nous préparons les déclarations pour :",
+  "c_states": "Les 50 États", "c_remote": "Venez en personne, ou rencontrez‑nous par téléphone ou vidéo depuis partout aux États‑Unis.",
   "c_hours": "Saison des impôts (de mi‑janvier au 15 avril) : du lundi au samedi, 9 h – 17 h · Le reste de l'année : sur rendez‑vous",
 
-  "footer_tag": "Préparation d'impôts en français, arabe, swahili et anglais pour les Quad Cities.",
+  "footer_tag": "Préparation d'impôts en français, arabe, swahili et anglais, pour les 50 États.",
   "footer_irs": "Sans lien avec l'IRS ni aucune administration fiscale d'État.",
   "footer_advice": "Ce site donne des informations générales, pas un conseil fiscal pour votre situation.",
 
