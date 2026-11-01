@@ -75,7 +75,10 @@ async function buildPage(page) {
         `<link rel="alternate" hreflang="x-default" href="${SITE + page.url}">`].join("\n"),
       jsonld: JSON.stringify({
         "@context": "https://schema.org", "@type": "AccountingService", name: "AtoA", url: SITE + l.path,
-        description: t.meta_description, knowsLanguage: ["en", "ar", "sw", "fr"],
+        description: t.meta_description, knowsLanguage: ["en", "ar", "sw", "fr", "ln", "rn", "rw"],
+        foundingDate: "2003", logo: SITE + "assets/logo-mark.png", image: [SITE + "og.jpg", SITE + "assets/founder.jpg"],
+        founder: { "@type": "Person", name: "Kakozi Elangi", jobTitle: "Founder", image: SITE + "assets/founder.jpg" },
+        employee: [{ "@type": "Person", name: "Nadir Abdalla", jobTitle: "Tax Associate", image: SITE + "assets/nadir.jpg" }],
         ...(PHONE && { telephone: "+1" + PHONE }), email: EMAIL,
         address: { "@type": "PostalAddress", streetAddress: ADDRESS.street, addressLocality: ADDRESS.city, addressRegion: ADDRESS.region, postalCode: ADDRESS.zip, addressCountry: "US" },
         areaServed: { "@type": "Country", name: "United States" },
