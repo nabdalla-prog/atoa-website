@@ -26,6 +26,8 @@ const LANGS = {
 // Every page loads the Arabic fonts too, because the language greetings appear on all of them
 const FONTS = `https://fonts.googleapis.com/css2?${LATIN_FONTS}&${ARABIC_FONTS}&display=swap`;
 
+// AtoA mark, redrawn from the logo sign: rising bars, orange ribbon, script "A" (body follows the text color)
+const logoMark = '<svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true"><g class="logo-bars"><rect x="11" y="27" width="8" height="24" rx="1"/><rect x="21" y="16" width="8" height="26" rx="1"/><rect x="31" y="5" width="8" height="28" rx="1"/></g><path fill="#F7931E" d="M3 58C13 47 30 34 40 18 44 11 45 6 44 1 49 6 49 15 45 23 37 39 20 51 9 60Z"/><path fill="currentColor" fill-rule="evenodd" d="M9 60C20 51 37 39 45 23 47 19 48 15 48 11L50.4 39.5 58 37.5 51 44.5 51.5 51C52 56 54 59 58 62H43C45 59 45.5 56 45 52L44.6 47.5H32.5C28.5 50 26.5 54 26.5 58 22 61 15 61.5 9 60ZM34.5 43.5H44.3L43 26C40.5 32.5 38 38.5 34.5 43.5Z"/></svg>';
 const esc = s => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 const check = '<svg viewBox="0 0 24 24" class="size-4 mt-0.5 shrink-0 text-success" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg>';
 const cross = '<svg viewBox="0 0 24 24" class="size-4 mt-0.5 shrink-0 text-error" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>';
@@ -56,6 +58,7 @@ async function buildPages() {
         address: { "@type": "PostalAddress", streetAddress: ADDRESS.street, addressLocality: ADDRESS.city, addressRegion: ADDRESS.region, postalCode: ADDRESS.zip, addressCountry: "US" },
         areaServed: { "@type": "Country", name: "United States" },
       }),
+      logo_mark: logoMark,
       lang_switch: langSwitch(code, root, "lang-link"),
       whatsapp: `${WHATSAPP}?text=${encodeURIComponent(t.wa_text)}`,
       whatsapp_base: WHATSAPP,

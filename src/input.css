@@ -107,11 +107,13 @@
 }
 
 @layer components {
-  /* ===== Logo: "Ato" navy + "A" orange, with the orange arrow-swoosh from the brand board ===== */
-  .logo { @apply relative inline-flex flex-col items-start font-latin font-bold leading-none tracking-[-0.04em] text-primary; }
+  /* ===== Logo: the AtoA mark (bars, orange ribbon, "A") + "Ato" navy and "A" orange ===== */
+  .logo { @apply relative inline-flex items-center gap-[0.22em] font-latin font-bold leading-none tracking-[-0.04em] text-primary; }
   [data-theme="atoa-night"] .logo { color: var(--color-mist); }
   .logo-a { color: var(--color-orange); }
-  .logo-swoosh { @apply block w-[78%] ms-[6%] -mt-[0.08em] h-[0.32em]; color: var(--color-orange); }
+  .logo-mark { @apply block size-[1.45em] shrink-0 -my-[0.15em]; }
+  .logo-bars { fill: #C9D6E3; }
+  [data-theme="atoa-night"] .logo-bars { fill: #3A5A7A; }
 
   /* Orange swoosh under the key word of a headline (echoes the logo arrow) */
   h1 em, h2 em, .swoosh {
