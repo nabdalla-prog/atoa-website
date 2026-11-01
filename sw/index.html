@@ -5,7 +5,7 @@
 <!-- Shared <head> for every page; build.mjs inserts it where a template says {{>head}} -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>AtoA Full Tax Services · Huduma ya kodi kwa Kiswahili, Kiarabu, Kifaransa na Kiingereza · Majimbo yote 50</title>
+<title>AtoA Full Tax Services · Huduma ya kodi Rock Island, IL · Kiswahili, Kiarabu, Kifaransa, Kiingereza</title>
 <meta name="description" content="Tunaandaa fomu za kodi za watu binafsi, familia na biashara ndogo kwa majimbo yote 50, kwa Kiswahili, Kiarabu, Kifaransa na Kiingereza, kutoka ofisi yetu Rock Island, Illinois. Fomu za serikali kuu na za majimbo, msaada wa ITIN na barua za IRS.">
 <meta name="theme-color" content="#0B2D4A">
 <link rel="canonical" href="https://atoafulltaxservices.com/sw/">
@@ -17,7 +17,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="AtoA Full Tax Services">
 <meta property="og:locale" content="sw_KE">
-<meta property="og:title" content="AtoA Full Tax Services · Huduma ya kodi kwa Kiswahili, Kiarabu, Kifaransa na Kiingereza · Majimbo yote 50">
+<meta property="og:title" content="AtoA Full Tax Services · Huduma ya kodi Rock Island, IL · Kiswahili, Kiarabu, Kifaransa, Kiingereza">
 <meta property="og:description" content="Tunaandaa fomu za kodi za watu binafsi, familia na biashara ndogo kwa majimbo yote 50, kwa Kiswahili, Kiarabu, Kifaransa na Kiingereza, kutoka ofisi yetu Rock Island, Illinois. Fomu za serikali kuu na za majimbo, msaada wa ITIN na barua za IRS.">
 <meta property="og:url" content="https://atoafulltaxservices.com/sw/">
 <meta property="og:image" content="https://atoafulltaxservices.com/og.jpg?v=2">
@@ -409,6 +409,12 @@
 
 </main>
 
+<!-- Phones only: WhatsApp always one tap away while reading; hidden over the hero and the contact section, which have their own buttons -->
+<a href="https://wa.me/13097218006?text=Habari%20AtoA%2C%20nina%20swali%20kuhusu%20kodi%20zangu." target="_blank" rel="noopener" aria-label="Tuandikie WhatsApp" title="Tuandikie WhatsApp" data-fab
+   class="md:hidden fixed z-30 end-4 bottom-[calc(1rem+env(safe-area-inset-bottom))] btn btn-primary btn-circle size-14 shadow-lg shadow-black/20 transition-[transform,opacity] duration-300 motion-reduce:transition-none translate-y-24 opacity-0 pointer-events-none" tabindex="-1">
+  <svg viewBox="0 0 24 24" class="size-7" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.2.1-.1 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.5-.3Z"/></svg>
+</a>
+
 <!-- ===== Footer ===== -->
 <footer class="border-t border-base-300 bg-base-200/50">
   <div class="mx-auto max-w-6xl px-4 sm:px-6 py-10 flex flex-col md:flex-row md:items-center justify-between gap-6 text-sm">
@@ -521,6 +527,19 @@
     lastY = y;
   };
   addEventListener("scroll", onScroll, { passive: true }); onScroll();
+
+  // ===== Floating WhatsApp button (phones): show once past the hero, hide while the contact section or footer is on screen =====
+  const fab = document.querySelector("[data-fab]");
+  const seen = new Map();
+  const fabWatch = new IntersectionObserver(entries => {
+    entries.forEach(e => seen.set(e.target, e.isIntersecting));
+    const show = [...seen].every(([, on]) => !on);
+    fab.classList.toggle("translate-y-24", !show);
+    fab.classList.toggle("opacity-0", !show);
+    fab.classList.toggle("pointer-events-none", !show);
+    fab.tabIndex = show ? 0 : -1;
+  });
+  [document.querySelector("main > section"), document.getElementById("contact"), document.querySelector("footer")].forEach(el => fabWatch.observe(el));
 
   // ===== Deadlines: days remaining + next up =====
   const today = new Date(); today.setHours(0, 0, 0, 0);
