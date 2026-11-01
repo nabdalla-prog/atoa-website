@@ -1,6 +1,6 @@
 # AtoA: tax preparation in four languages, Quad Cities
 
-A static website built the Lafiglow way (plain HTML, a booking popup that goes to the scheduler, ready for GitHub Pages), with a full version in each of four languages:
+A static website built the Lafiglow way (plain HTML, a booking popup that sends visitors to WhatsApp, phone or email, ready for GitHub Pages), with a full version in each of four languages:
 
 | Page | Language |
 |---|---|

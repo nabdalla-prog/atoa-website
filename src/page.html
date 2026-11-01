@@ -349,7 +349,7 @@
   </div>
 </footer>
 
-<!-- ===== Booking (same flow as Lafiglow: choose → scheduler in a new tab → come back to the checklist) ===== -->
+<!-- ===== Booking: choose → reach us by WhatsApp, phone or email → the checklist (no online calendar for now) ===== -->
 <dialog id="booker" class="modal modal-bottom sm:modal-middle">
   <div class="modal-box max-w-lg p-0 bg-base-100">
     <div class="flex items-center justify-between px-6 pt-5">
@@ -382,9 +382,11 @@
     <div class="px-6 pb-6 pt-4 hidden" data-panel="2">
       <h2 class="text-2xl text-base-content">{{bk_time_t}}</h2>
       <p class="mt-1 text-sm text-base-content/65">{{bk_time_b}}</p>
-      <a class="btn btn-primary w-full mt-6" id="bk-go" href="#" target="_blank" rel="noopener">{{bk_time_cta}}
-        <svg viewBox="0 0 24 24" class="size-4 rtl:-scale-x-100" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
-      <a class="btn btn-outline border-base-300 w-full mt-2" id="bk-wa" href="{{whatsapp}}" target="_blank" rel="noopener">{{bk_wa}}</a>
+      <a class="btn btn-primary w-full mt-6" id="bk-wa" href="{{whatsapp}}" target="_blank" rel="noopener" data-reach>{{bk_wa}}</a>
+      <div class="grid grid-cols-2 gap-2 mt-2">
+        <a class="btn btn-outline border-base-300" href="tel:+1{{phone}}" data-reach>{{bk_call}}</a>
+        <a class="btn btn-outline border-base-300" href="mailto:{{email}}" data-reach>{{bk_email}}</a>
+      </div>
       <button class="btn btn-ghost btn-sm w-full mt-2" data-back>{{bk_back}}</button>
     </div>
 
@@ -400,7 +402,6 @@
 
 <script>
   // ===== Settings: replace these before launch =====
-  const SCHEDULER_URL = "https://calendly.com/your-link"; // TODO: Square Appointments / Calendly link
   const T = {{js}};
 
   // ===== Suggest the visitor's own language (once, until dismissed) =====
@@ -460,8 +461,7 @@
 
   // ===== Booking flow =====
   const booker = document.getElementById("booker");
-  const go = document.getElementById("bk-go");
-  let sentToScheduler = false;
+  let reached = false;
   function show(step) {
     booker.querySelectorAll("[data-panel]").forEach(p => p.classList.toggle("hidden", p.dataset.panel != step));
     booker.querySelectorAll("[data-step-dot]").forEach(d => d.classList.toggle("step-primary", d.dataset.stepDot <= step));
@@ -471,17 +471,15 @@
     e.preventDefault(); show(1); booker.showModal();
   }));
   booker.querySelector("[data-next]").addEventListener("click", () => {
-    const q = "language=" + val("apptlang") + "&topic=" + val("topic");
-    go.href = SCHEDULER_URL + (SCHEDULER_URL.includes("?") ? "&" : "?") + q;
     document.getElementById("bk-wa").href = "{{whatsapp_base}}?text=" + encodeURIComponent(T.waText.replace("{lang}", val("apptlang")));
     show(2);
   });
   booker.querySelector("[data-back]").addEventListener("click", () => show(1));
   booker.querySelector("[data-close]").addEventListener("click", () => booker.close());
-  go.addEventListener("click", () => { sentToScheduler = true; });
-  // When they come back from the scheduler tab, move them on to the checklist step
+  booker.querySelectorAll("[data-reach]").forEach(a => a.addEventListener("click", () => { reached = true; }));
+  // When they come back from WhatsApp, the phone or email, move them on to the checklist step
   document.addEventListener("visibilitychange", () => {
-    if (document.visibilityState === "visible" && sentToScheduler && booker.open) { sentToScheduler = false; show(3); }
+    if (document.visibilityState === "visible" && reached && booker.open) { reached = false; show(3); }
   });
 </script>
 </body>

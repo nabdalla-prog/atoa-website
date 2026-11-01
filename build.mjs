@@ -62,6 +62,7 @@ async function buildPages() {
       lang_switch: langSwitch(code, root, "lang-link"),
       whatsapp: `${WHATSAPP}?text=${encodeURIComponent(t.wa_text)}`,
       whatsapp_base: WHATSAPP,
+      phone: PHONE, email: EMAIL,
       contact_line: [PHONE && `<a href="tel:+1${PHONE}" class="link-quiet">${PHONE_SHOWN}</a>`, `<a href="mailto:${EMAIL}" class="link-quiet">${EMAIL}</a>`].filter(Boolean).join(" · "),
       address: `${ADDRESS.street}, ${ADDRESS.city}, ${ADDRESS.region} ${ADDRESS.zip}`,
       map_url: "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(`${ADDRESS.street}, ${ADDRESS.city}, ${ADDRESS.region} ${ADDRESS.zip}`),

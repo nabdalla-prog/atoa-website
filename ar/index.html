@@ -376,13 +376,13 @@
   </div>
 </footer>
 
-<!-- ===== Booking (same flow as Lafiglow: choose → scheduler in a new tab → come back to the checklist) ===== -->
+<!-- ===== Booking: choose → reach us by WhatsApp, phone or email → the checklist (no online calendar for now) ===== -->
 <dialog id="booker" class="modal modal-bottom sm:modal-middle">
   <div class="modal-box max-w-lg p-0 bg-base-100">
     <div class="flex items-center justify-between px-6 pt-5">
       <ul class="steps steps-horizontal text-xs w-64 -ms-6">
         <li class="step step-primary" data-step-dot="1">اختر</li>
-        <li class="step" data-step-dot="2">الموعد</li>
+        <li class="step" data-step-dot="2">تواصل</li>
         <li class="step" data-step-dot="3">استعد</li>
       </ul>
       <form method="dialog"><button class="btn btn-sm btn-ghost btn-square" aria-label="إغلاق">✕</button></form>
@@ -407,11 +407,13 @@
     </div>
 
     <div class="px-6 pb-6 pt-4 hidden" data-panel="2">
-      <h2 class="text-2xl text-base-content">اختر الوقت المناسب لك.</h2>
-      <p class="mt-1 text-sm text-base-content/65">يُفتح التقويم في نافذة جديدة. تفضّل أن تسأل أولًا؟ أرسل لنا رسالة على واتساب.</p>
-      <a class="btn btn-primary w-full mt-6" id="bk-go" href="#" target="_blank" rel="noopener">اعرض المواعيد المتاحة
-        <svg viewBox="0 0 24 24" class="size-4 rtl:-scale-x-100" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
-      <a class="btn btn-outline border-base-300 w-full mt-2" id="bk-wa" href="https://wa.me/13097218006?text=%D9%85%D8%B1%D8%AD%D8%A8%D9%8B%D8%A7%20AtoA%D8%8C%20%D9%84%D8%AF%D9%8A%20%D8%B3%D8%A4%D8%A7%D9%84%20%D8%B9%D9%86%20%D8%B6%D8%B1%D8%A7%D8%A6%D8%A8%D9%8A." target="_blank" rel="noopener">راسلنا على واتساب</a>
+      <h2 class="text-2xl text-base-content">تواصل معنا بالطريقة التي تناسبك.</h2>
+      <p class="mt-1 text-sm text-base-content/65">أرسل لنا رسالة على واتساب، أو اتصل بنا، أو راسلنا بالبريد الإلكتروني، وسنرد عليك ونحدد معك موعدًا.</p>
+      <a class="btn btn-primary w-full mt-6" id="bk-wa" href="https://wa.me/13097218006?text=%D9%85%D8%B1%D8%AD%D8%A8%D9%8B%D8%A7%20AtoA%D8%8C%20%D9%84%D8%AF%D9%8A%20%D8%B3%D8%A4%D8%A7%D9%84%20%D8%B9%D9%86%20%D8%B6%D8%B1%D8%A7%D8%A6%D8%A8%D9%8A." target="_blank" rel="noopener" data-reach>راسلنا على واتساب</a>
+      <div class="grid grid-cols-2 gap-2 mt-2">
+        <a class="btn btn-outline border-base-300" href="tel:+13097218006" data-reach>اتصل بنا</a>
+        <a class="btn btn-outline border-base-300" href="mailto:hello@atoafulltaxservices.com" data-reach>راسلنا بالبريد الإلكتروني</a>
+      </div>
       <button class="btn btn-ghost btn-sm w-full mt-2" data-back>رجوع</button>
     </div>
 
@@ -427,7 +429,6 @@
 
 <script>
   // ===== Settings: replace these before launch =====
-  const SCHEDULER_URL = "https://calendly.com/your-link"; // TODO: Square Appointments / Calendly link
   const T = {"passed":"انتهى","today":"اليوم","days":"{n} يومًا","waText":"مرحبًا AtoA، أريد حجز موعد ضرائب باللغة: {lang}."};
 
   // ===== Suggest the visitor's own language (once, until dismissed) =====
@@ -487,8 +488,7 @@
 
   // ===== Booking flow =====
   const booker = document.getElementById("booker");
-  const go = document.getElementById("bk-go");
-  let sentToScheduler = false;
+  let reached = false;
   function show(step) {
     booker.querySelectorAll("[data-panel]").forEach(p => p.classList.toggle("hidden", p.dataset.panel != step));
     booker.querySelectorAll("[data-step-dot]").forEach(d => d.classList.toggle("step-primary", d.dataset.stepDot <= step));
@@ -498,17 +498,15 @@
     e.preventDefault(); show(1); booker.showModal();
   }));
   booker.querySelector("[data-next]").addEventListener("click", () => {
-    const q = "language=" + val("apptlang") + "&topic=" + val("topic");
-    go.href = SCHEDULER_URL + (SCHEDULER_URL.includes("?") ? "&" : "?") + q;
     document.getElementById("bk-wa").href = "https://wa.me/13097218006?text=" + encodeURIComponent(T.waText.replace("{lang}", val("apptlang")));
     show(2);
   });
   booker.querySelector("[data-back]").addEventListener("click", () => show(1));
   booker.querySelector("[data-close]").addEventListener("click", () => booker.close());
-  go.addEventListener("click", () => { sentToScheduler = true; });
-  // When they come back from the scheduler tab, move them on to the checklist step
+  booker.querySelectorAll("[data-reach]").forEach(a => a.addEventListener("click", () => { reached = true; }));
+  // When they come back from WhatsApp, the phone or email, move them on to the checklist step
   document.addEventListener("visibilitychange", () => {
-    if (document.visibilityState === "visible" && sentToScheduler && booker.open) { sentToScheduler = false; show(3); }
+    if (document.visibilityState === "visible" && reached && booker.open) { reached = false; show(3); }
   });
 </script>
 </body>
