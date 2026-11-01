@@ -48,7 +48,7 @@ async function buildPages() {
     const vars = {
       ...t,
       lang: code, dir: l.dir, root, fonts: FONTS, og_locale: l.og,
-      canonical: SITE + l.path, og_image: SITE + "og.jpg",
+      canonical: SITE + l.path, og_image: SITE + "og.jpg?v=2", // bump v when og.jpg changes, so WhatsApp/Facebook refresh their cached preview
       alternates: [...Object.entries(LANGS).map(([c, x]) => `<link rel="alternate" hreflang="${c}" href="${SITE + x.path}">`),
         `<link rel="alternate" hreflang="x-default" href="${SITE}">`].join("\n"),
       jsonld: JSON.stringify({

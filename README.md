@@ -14,6 +14,7 @@ A static website built the Lafiglow way (plain HTML, a booking popup that sends 
 - **Edit `src/page.html`** (the layout) and **`src/i18n/<lang>.json`** (the words). Never edit the built `index.html` files by hand.
 - `node build.mjs` builds all four pages and `assets/site.css` (Tailwind 4 + DaisyUI 5). `node build.mjs --watch` rebuilds every time you save.
 - `node_modules` is AtoA's own copy of the build tools (DaisyUI 5.7.46, Tailwind 4.3.3, PostCSS). It's separate from every other project and is not committed (`.gitignore`). On a new computer, run `npm install`.
+- `og.jpg` (the preview picture shown when the site is shared on WhatsApp or Facebook) is a screenshot of `src/og.html` at 1200×630: `chromium --headless --window-size=1200,630 --screenshot=og.png src/og.html`. After changing it, bump `?v=` next to `og_image` in `build.mjs`.
 - Each page tells Google the other three versions exist (`hreflang` tags), so each language can rank in search on its own.
 - When a visitor's phone or computer is set to Arabic, Swahili or French, a small bar at the top offers them that version.
 
