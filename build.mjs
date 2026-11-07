@@ -75,13 +75,13 @@ async function buildPage(page) {
     const vars = {
       ...t,
       lang: code, dir: l.dir, root, fonts: FONTS, og_locale: l.og,
-      canonical: SITE + l.path + page.url, home: page.root ?? (page.url ? "./" : "#top"), here: page.root ?? "", og_image: SITE + "og.jpg?v=2", // bump v when og.jpg changes, so WhatsApp/Facebook refresh their cached preview
+      canonical: SITE + l.path + page.url, home: page.root ?? (page.url ? "./" : "#top"), here: page.root ?? "", og_image: SITE + "og.jpg?v=3", // bump v when og.jpg changes, so WhatsApp/Facebook refresh their cached preview
       alternates: page.only ? "" : [...Object.entries(LANGS).map(([c, x]) => `<link rel="alternate" hreflang="${c}" href="${SITE + x.path + page.url}">`),
         `<link rel="alternate" hreflang="x-default" href="${SITE + page.url}">`].join("\n"),
       jsonld: JSON.stringify({
         "@context": "https://schema.org", "@type": "AccountingService", name: "AtoA Full Tax Services", legalName: "AtoA Full Tax Services LLC", alternateName: "AtoA", url: SITE + l.path,
         description: t.meta_description, knowsLanguage: ["en", "ar", "sw", "fr", "ln", "rn", "rw"],
-        foundingDate: "2003", logo: SITE + "assets/logo-mark.png", image: [SITE + "og.jpg", SITE + "assets/founder.jpg"],
+        foundingDate: "2009", logo: SITE + "assets/logo-mark.png", image: [SITE + "og.jpg", SITE + "assets/founder.jpg"],
         founder: { "@type": "Person", name: "Kakozi Elangi", jobTitle: "Founder", image: SITE + "assets/founder.jpg" },
         employee: [{ "@type": "Person", name: "Nadir Abdalla", jobTitle: "Tax Associate", image: SITE + "assets/nadir.jpg" }],
         ...(PHONE && { telephone: "+1" + PHONE }), email: EMAIL,
