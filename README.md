@@ -15,6 +15,8 @@ Each language folder also has a `privacy.html` page, built from `src/privacy.htm
 
 - **Edit `src/page.html`** and `src/privacy.html` (the layouts; the shared `<head>` and footer are in `src/partials/`) and **`src/i18n/<lang>.json`** (the words). Never edit the built `index.html` files by hand.
 - `node build.mjs` builds all four pages and `assets/site.css` (Tailwind 4 + DaisyUI 5). `node build.mjs --watch` rebuilds every time you save.
+- **Publishing:** pushing to `main` runs `.github/workflows/pages.yml`, which publishes only the built pages (`index.html`, `privacy.html`, `404.html`, the `ar`/`sw`/`fr` folders, `assets`, `og.jpg`, `robots.txt`, `sitemap.xml`). Source files are not served. A new top-level page or folder must be added to the copy step in that file.
+- `package-lock.json` pins the exact version of every build tool. Use `npm ci` (not `npm install`) to install them.
 - `node_modules` is AtoA's own copy of the build tools (DaisyUI 5.7.46, Tailwind 4.3.3, PostCSS). It's separate from every other project and is not committed (`.gitignore`). On a new computer, run `npm install`.
 - `og.jpg` (the preview picture shown when the site is shared on WhatsApp or Facebook) is a screenshot of `src/og.html` at 1200×630: `chromium --headless --window-size=1200,630 --virtual-time-budget=8000 --screenshot=og.png src/og.html`. After changing it, bump `?v=` next to `og_image` in `build.mjs`.
 - Each page tells Google the other three versions exist (`hreflang` tags), so each language can rank in search on its own.
